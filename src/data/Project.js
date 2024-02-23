@@ -23,7 +23,7 @@ const projectList = [
         imgUrl:'assets/pup3.PNG',
         tech: ['test', 'test', 'test'],
         link: 'https://github.com/Andrew-Lodise/WhatToWear'
-    },
+    }
 ]
 
 export default projectList
