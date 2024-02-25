@@ -23,8 +23,9 @@ const Navbar = () => {
         {/* menu */}
         <div>
           <ul className='hidden md:flex'>
-            <li className='py-2 px-5 lg:px-12 m-2 rounded-full border-2 border-white text-white 
-            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200'>
+            <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
+            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
+             underline-offset-1 underline hover:underline-offset-8'>
               <Link  
               to="home" 
               spy={true} 
@@ -34,26 +35,30 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className='py-2 px-5 lg:px-12 m-2 rounded-full border-2 border-white text-white 
-            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200'>
+            <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
+            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
+             underline-offset-1 underline hover:underline-offset-8'>
               <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} >
                 Projects
               </Link>
             </li>
-            <li className='py-2 px-5 lg:px-12 m-2 rounded-full border-2 border-white text-white 
-            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200'>
-              <Link to="timeline" spy={true} smooth={true} offset={-70} duration={500} >
+            <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
+            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
+             underline-offset-1 underline hover:underline-offset-8'>
+              <Link to="timeline" spy={true} smooth={true} offset={-60} duration={500} >
                 Timeline
               </Link>
             </li>
-            <li className='py-2 px-5 lg:px-12 m-2 rounded-full border-2 border-white text-white
-             bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200'>
+            <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
+            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
+             underline-offset-1 underline hover:underline-offset-8'>
               <Link to="skills" spy={true} smooth={true} offset={-70} duration={500} >
                 Skills
               </Link>
             </li>
-            <li className='py-2 px-5 lg:px-12 m-2 rounded-full border-2 border-white text-white
-             bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200'>
+            <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
+            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
+             underline-offset-1 underline hover:underline-offset-8'>
               <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} >
                 Contact
               </Link>

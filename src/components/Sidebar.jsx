@@ -6,7 +6,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 const Sidebar = () => {
 
   return (
-    <div className='bg-gray-900 text-white'>
+    <div className='hidden  md:block md:bg-gray-900 md:text-white'>
         {/* sidebar */}
         <div className={'fixed top-[20%] flex flex-col left-0 text-3xl py-3'}>
           <ul>
