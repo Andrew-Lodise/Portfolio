@@ -13,8 +13,8 @@ function App() {
       <Home />
       <Sidebar />
       <Projects />
-      <Timeline />
       <Skills />
+      <Timeline />
       <Contact />
     </div>
   );
