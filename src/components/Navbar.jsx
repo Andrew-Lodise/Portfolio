@@ -13,9 +13,9 @@ const Navbar = () => {
     <div>
       {/** navbar */}
       <div className="fixed w-[100%] h-[80px] flex justify-between items-center p-4 bg-gray-900
-       text-white">
+       text-white shadow-lg shadow-gray-950">
         {/* logo */}
-        <div className="flex h-[60px] w-[100px] ">
+        <div className="flex h-[60px] w-[100px] cursor-default">
           <h1 className='font-greatVibes text-[50px] text-blue-300'>
           AL
           </h1>
@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul className='hidden md:flex'>
             <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
             bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
-             underline-offset-1 underline hover:underline-offset-8'>
+             underline-offset-1 underline hover:underline-offset-8 hover:scale-110'>
               <Link  
               to="home" 
               spy={true} 

@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectItem = ({title, imgUrl, tech, codeLink, demoLink}) => {
   return (
      /** entire item */
-    <div className='border-2 border-white rounded-md overflow-hidden w-[330px] h-[360px]'>
+    <div className='border-2 border-white rounded-md overflow-hidden w-[330px] h-[360px] shadow-lg shadow-black'>
       <h3 className='text-lg md:text-xl font-semibold text-center text-white'>{title}</h3>
       <div className='flex flex-col items-center'>
         <img src={imgUrl} 

@@ -14,7 +14,7 @@ const Contact = () => {
         <div name="content container" className='flex flex-col w-auto items-center align-middle 
         bg-gray-800' >
             {/** centered content */}
-            <div name='content div' className='bg-gray-900 px-10 rounded-lg mb-10'>
+            <div name='content div' className='bg-gray-900 px-10 rounded-lg mb-10 shadow-lg shadow-black'>
                 {/** form heading */}
                 <div className=' text-white text-3xl md:text-4xl lg:text-5xl pb-4 text-center mt-12'>
                     Connect with me! 
