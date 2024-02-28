@@ -23,15 +23,10 @@ const Navbar = () => {
         {/* menu */}
         <div>
           <ul className='hidden md:flex'>
-            <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
-            bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
-             underline-offset-1 underline hover:underline-offset-8 hover:scale-110'>
-              <Link  
-              to="home" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} >
+            <li className='py-2 mx-5 lg:mx-12 m-2 text-xl text-white bg-gray-900 
+             cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
+             underline-offset-2 underline hover:underline-offset-4 hover:scale-125 '>
+              <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
                 Home
               </Link>
             </li>
@@ -45,14 +40,14 @@ const Navbar = () => {
             <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
             bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
              underline-offset-1 underline hover:underline-offset-8'>
-              <Link to="skills" spy={true} smooth={true} offset={-70} duration={500} >
+              <Link to="skills" spy={true} smooth={true} offset={-75} duration={500} >
                 Skills
               </Link>
             </li>
             <li className='py-2 px-5 lg:px-12 m-2 rounded-full text-xl text-white hover: 
             bg-gray-900 cursor-pointer hover:border-blue-300 hover:text-blue-300 duration-200
              underline-offset-1 underline hover:underline-offset-8'>
-              <Link to="timeline" spy={true} smooth={true} offset={-60} duration={500} >
+              <Link to="timeline" spy={true} smooth={true} offset={-70} duration={500} >
                 Timeline
               </Link>
             </li>
@@ -97,7 +92,7 @@ const Navbar = () => {
           </li>
           <li className='my-4 p-2 text-4xl border-2 cursor-pointer border-white rounded-lg hover:border-blue-300 
           hover:text-blue-300 duration-200'>
-            <Link to="skills" spy={true} smooth={true} offset={-70} duration={500}
+            <Link to="skills" spy={true} smooth={true} offset={-78} duration={500}
             onClick={handleBarClick} >
               Skills
             </Link>
