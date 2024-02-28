@@ -15,7 +15,7 @@ const Contact = () => {
         bg-gray-800' >
             {/** centered content */}
             <div name='content div' className='bg-gray-900 px-10 rounded-lg mb-10 shadow-lg 
-            shadow-black'>
+            shadow-black md:w-[60%] lg:w-[50%] lg:first-letter lg:max-w-[800px]'>
                 {/** form heading */}
                 <div className=' text-white text-3xl md:text-4xl lg:text-5xl pb-4 text-center 
                 mt-12'>

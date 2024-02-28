@@ -23,8 +23,8 @@ const Skills = () => {
       <div name="content div" className='flex flex-col items-center
         align-middle bg-gray-800' >
           {/**  general languages */}
-          <div className='p-4 w-[95%] md:w-[80%] lg:w-[70%] my-4 text-white border-2 border-white rounded-lg
-           shadow-lg shadow-gray-950'>
+          <div className='p-4 w-[95%] md:w-[80%] lg:w-[70%] lg:max-w-[1000px] my-4 text-white border-2 border-white rounded-lg
+           shadow-lg shadow-gray-950 bg-gray-900'>
             <h1 className='text-3xl md:text-4xl lg:text-5xl text-center font-bold'>
             General Languages
             </h1>
@@ -57,24 +57,28 @@ const Skills = () => {
                 border-b-[1px] w-full'>
                   Some Experience
                 </h1>
-                <ul className=' flex flex-col items-center text-xl lg:text-2xl justify-evenly  h-full'>
+                <ul className=' flex flex-col items-center text-xl lg:text-2xl justify-evenly  h-full
+                hover:scale-110'
+                data-tooltip-id="somett" >
                   <li className='flex items-center text-[#A08FB8]'>
                     Haskell <DiHaskell size={45} className='inline '/>
                   </li>
                   <li>
                     C <SiC size={30} className='inline'/>
                   </li>
-                  <li className='text-xl flex items-center text-[#007ACC]'>
+                  <li className='text-xl lg:text-2xl flex items-center text-[#007ACC]'>
                     C++ <SiCplusplus size={35} className='inline'/>
                   </li>
                 </ul>
+                <Tooltip id="somett" place="bottom" 
+                  content="Limited experience, Only used in 1 or 2 classes"/>
               </div>
             </div>
           </div>
 
           {/**  Web Dev */}
           <div className='p-4 w-[95%] md:w-[80%] lg:w-[70%] my-4 text-white border-2 border-white rounded-lg
-           shadow-lg shadow-gray-950'>
+           shadow-lg shadow-gray-950 bg-gray-900 lg:max-w-[1000px]'>
             <h1 className='text-3xl md:text-4xl lg:text-5xl text-center font-bold'>
             WebDev
             </h1>
@@ -121,13 +125,13 @@ const Skills = () => {
                 </h1>
                 <ul className='flex flex-col items-center  h-full text-xl lg:text-2xl
                  justify-evenly'>
-                  <li className='text-sm md:text-xl flex items-center text-[#7AB35C]'>
+                  <li className='text-sm md:text-xl lg:text-2xl flex items-center text-[#7AB35C]'>
                     Express <CiServer size={30} className='inline '/>
                   </li>
-                  <li className='text-sm md:text-xl flex items-center text-[#008BAC]'>
+                  <li className='text-sm md:text-xl lg:text-2xl flex items-center text-[#008BAC]'>
                     SQL <DiMysql size={40} className='inline'/>
                   </li>
-                  <li className='text-sm md:text-xl'>
+                  <li className='text-sm md:text-xl lg:text-2xl'>
                     MongoDB <DiMongodb size={30} className='inline'/>
                   </li>
                 </ul>
@@ -137,7 +141,7 @@ const Skills = () => {
 
           {/** DevOps Tools */}
           <div className='p-4 w-[95%] md:w-[80%] lg:w-[70%] my-4 text-white border-2 border-white rounded-lg
-           shadow-lg shadow-gray-950'>
+           shadow-lg shadow-gray-950 bg-gray-900 lg:max-w-[1000px]'>
             <h1 className='text-3xl md:text-4xl lg:text-5xl text-center font-bold'>
             DevOps Tools
             </h1>
