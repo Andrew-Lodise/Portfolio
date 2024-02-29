@@ -8,9 +8,9 @@ const Home = () => {
         <div className='flex flex-col p-4 border-2 border-white rounded-lg w-[80%]
          h-full bg-gray-900 shadow-lg shadow-gray-950'>
           { /* Andrew Lodise */}
-          <div className=' flex flex-col items-left mb-[-30px]'>
-            <h1 className='text-[60px] md:text-[90px] lg:text-[100px]
-            font-greatVibes text-blue-300 min-w-[500px]'>
+          <div className=' flex flex-col items-left mb-[-20px]'>
+            <h1 className='text-[50px] md:text-[90px] lg:text-[100px]
+            font-greatVibes text-blue-300'>
               Andrew Lodise
             </h1>
           </div>
