@@ -9,7 +9,7 @@ const ProjectItem = ({title, imgUrl, tech, codeLink, demoLink}) => {
       <div className='flex flex-col items-center'>
         <img src={imgUrl} 
         alt="Project" 
-        className='w-[99%] h-[240px] object-cover '/>
+        className='w-[99%] h-[240px] object-cover'/>
       </div>
         <div className='w-full p-2 '>
           <p className=' flex flex-wrap gap-2 flex-row items-center justify-center text-xs text-blue-300 md:text-sm '>
