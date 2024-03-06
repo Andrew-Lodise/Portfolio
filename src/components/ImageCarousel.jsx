@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ImageCarousel = ({ images }) => {
   return (
-    <Carousel showThumbs={false} infiniteLoop={true}> 
+    <Carousel showThumbs={false} infiniteLoop={true} showStatus={false}> 
       {images.map((image, index) => (
         <div key={index} className=' relative z-0'>
           <img src={image} alt={`Slide ${index + 1}`} />

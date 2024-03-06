@@ -4,7 +4,7 @@ import ImageCarousel from './ImageCarousel'
 const ProjectItem = ({title, images, tech, description, codeLink, demoLink}) => {
   return (
     <div name="project container" className=' rounded-lg border-2 border-whtie
-      m-2 bg-gray-900 shadow-lg shadow-gray-950 md:w-[90%]'>
+      m-2 bg-gray-900 shadow-lg shadow-gray-950 md:w-[90%] lg:w-[75%] my-4'>
         <h1 name="title" className='text-center text-3xl font-semibold border-b-[1px]
         border-white md:text-4xl lg:text-5xl md:py-2'>
           {title}        
