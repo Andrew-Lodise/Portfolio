@@ -15,7 +15,7 @@ const Skills = () => {
       {/** Title container */}
       <div name='title div' className=' bg-gray-800'>
         <h1 className='text-[60px] md:text-[80px] lg:text-[90px] font-greatVibes 
-        text-blue-300 text-center border-t-4 border-gray-900'>
+        text-white text-center border-t-4 border-gray-900 pt-4'>
           Skills
         </h1>
       </div>

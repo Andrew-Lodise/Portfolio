@@ -10,7 +10,7 @@ const Home = () => {
           { /* Andrew Lodise */}
           <div className=' flex flex-col items-left mb-[-20px]'>
             <h1 className='text-[50px] md:text-[90px] lg:text-[100px]
-            font-greatVibes text-blue-300'>
+            font-greatVibes text-white'>
               Andrew Lodise
             </h1>
           </div>

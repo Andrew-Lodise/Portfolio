@@ -1,39 +1,56 @@
 import React from 'react'
+import ImageCarousel from './ImageCarousel'
 
-const ProjectItem = ({title, imgUrl, tech, codeLink, demoLink}) => {
+const ProjectItem = ({title, images, tech, description, codeLink, demoLink}) => {
   return (
-     /** entire item */
-    <div className='border-2 border-white rounded-md overflow-hidden w-[330px] h-[360px] shadow-lg
-     shadow-black'>
-      <h3 className='text-lg md:text-xl font-semibold text-center text-white'>{title}</h3>
-      <div className='flex flex-col items-center'>
-        <img src={imgUrl} 
-        alt="Project" 
-        className='w-[99%] h-[240px] object-cover'/>
-      </div>
-        <div className='w-full p-2 '>
-          <p className=' flex flex-wrap gap-2 flex-row items-center justify-center text-xs text-blue-300 md:text-sm '>
-            {tech.map(item => (
-              <span className='inline-block px-2 font-semibold border-2 border-blue-300 rounded-md'>
+    <div name="project container" className=' rounded-lg border-2 border-whtie
+      m-2 bg-gray-900 shadow-lg shadow-gray-950 md:w-[90%]'>
+        <h1 name="title" className='text-center text-3xl font-semibold border-b-[1px]
+        border-white md:text-4xl lg:text-5xl md:py-2'>
+          {title}        
+          {/**What to Wear title */}
+        </h1>
+
+        <div name="content" className='flex flex-col md:flex-row'>
+          <div name="images/col1" className='w-[100%] md:w-1/2 h-full flex flex-col
+          items-center justify-center z-0'>
+            <ImageCarousel images={images}/>
+          </div>
+
+          <div name="text" className='w-[100%] md:w-1/2 flex flex-col justify-between'>  
+            <div name="technologies" className='flex justify-evenly border-b-[1px]
+            border-white py-2 lg:text-lg'>
+              {tech.map(item => (
+              <span className='border-2 border-white px-1 rounded-md'>
                 {item}
               </span>
             ))}
-          </p>
-        </div>
-        <div>
-          <ul className='flex flex-row items-center justify-evenly border-t-2 py-3  border-white'>
-            <li>
-              <a href={codeLink} target='_' className='px-2 py-1 border-white border-2 font-semibold rounded-full 
-              text-sm text-white  hover:border-blue-300 hover:text-blue-300 duration-200'> View Code </a>
-            </li>
-            <li>
-            <a href={demoLink} target='_' className='px-2 py-1 border-white border-2 font-semibold rounded-full 
-            text-sm text-white hover:border-blue-300 hover:text-blue-300 duration-200'> View Demo </a>
-            </li>
-          </ul>
-        </div>
-    </div>
-    
+            </div>   
+
+            <p name="description" className='text-lg md:text-xl lg:text-2xl px-4 '>
+              {description}
+            </p>
+
+            <div name="buttons" className='text-xl flex flex-col border-t-[1px]
+            border-white text-blue-300 duration-200 font-semibold lg:text-2xl'>
+              <ul className='flex justify-evenly py-2'>
+                <li className='hover:scale-125 duration-200'>
+                  <a href={codeLink} target='_' 
+                  className='px-2 underline underline-offset-2'> 
+                    View Code {/** codeLink */}
+                  </a>
+                </li>
+                <li className='hover:scale-125 duration-200'>
+                  <a href={demoLink} target='_' 
+                  className='px-2 underline underline-offset-2'> 
+                    View Demo {/** demoLink */}
+                  </a>
+                </li>
+              </ul>
+            </div> {/** buttons div */}
+          </div> {/** text div */}
+        </div> {/** content container */}
+      </div>
   )
 }
 
