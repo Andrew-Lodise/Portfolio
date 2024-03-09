@@ -13,7 +13,7 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-
+      
       {ProjectList.map(project => (
         <ProjectItem 
           images={project.images}

@@ -3,7 +3,9 @@ const ProjectList = [
     title: 'What to Wear',
     images: ["/assets/wtw1.jpg", "/assets/wtw2.jpg"],
     tech: ['Python', 'Tkinter', 'REST api', 'Pandas'],
-    description: `This app allows a user to search for weather data for 
+    description: `This app recommends outfits based on the weather data.
+    The user enters the city they are in and then generates an outfit for 
+    the day. allows a user to search for weather data for 
     any location in the world using either a REST api (Open Weather Map) 
     or by scraping the data from google. Based off the weather data and 
     outfits input by the user, it gives an outfit reccomendation.`,
