@@ -50,16 +50,19 @@ const Projects2 = () => {
         ••••••
       </div>
 
-      <Link to="skills" spy={true} smooth={true} duration={500} 
-      className='group text-2xl flex items-center self-start border-2 border-gray-300 
-      cursor-pointer ml-[2%] md:ml-[10%] mt-2 text-gray-300 hover:bg-gray-300 
-      hover:text-gray-900 pr-1 mb-8'>
-        <h4 className='px-2'>
-          View Skills
-        </h4>
-        <FaWandSparkles size={25} className='transition-transform group-hover:rotate-[495deg]
-        duration-700'/>
-      </Link>
+      <div name='footer' className='w-full h-[100px] mt-auto
+      flex flex-col'>
+        <Link to="skills" spy={true} smooth={true} duration={500} 
+        className='group text-2xl flex items-center self-start border-2 border-gray-300 
+        cursor-pointer ml-[2%] md:ml-[10%] mt-2 text-gray-300 hover:bg-gray-300 
+        hover:text-gray-900 pr-1 mb-8'>
+          <h4 className='px-2'>
+            View Skills
+          </h4>
+          <FaWandSparkles size={25} className='transition-transform group-hover:rotate-[495deg]
+          duration-700'/>
+        </Link>
+      </div>
       
     </div>
   )

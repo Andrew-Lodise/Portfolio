@@ -7,15 +7,19 @@ import { SiC, SiTailwindcss  } from "react-icons/si";
 import { CiServer } from "react-icons/ci";
 
 const Skills2 = () => {
+
   return (
     <div name="skills" className='w-full h-screen bg-gray-300 text-gray-900
     flex flex-col items-center'>
-      <h1 className='text-6xl pl-[10%] pt-[50px] self-start'>
+      <h1 className='self-start text-6xl pt-[125px] pl-[10%]'>
         Skills
       </h1>
-      <h6 className='text-xl pl-[10%] self-start pb-[20px]'>
-        Hover each square to learn more
-      </h6>
+
+      <div className='bg-green-200 w-[300px] h-[300px] relative'>
+        <div className='absolute top-[50%] translate-y-[-50%] left-2 bg-black/20 cursor-pointer'>
+          <FaPython size={30}/>
+        </div>
+      </div>
 
       <div name="general languages" className='flex lg:w-[80%] w-full justify-between 
       mt-[30px]'>

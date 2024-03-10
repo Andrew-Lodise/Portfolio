@@ -73,7 +73,7 @@ const Navbar = () => {
             hover:text-gray-900 hover:bg-gray-300 duration-200 w-[200px]'>
               Projects
             </Link>
-            <Link to="skills" spy={true} smooth={true} offset={-70} duration={500}
+            <Link to="skills" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
             className='border-2 border-gray-300 px-[5px] cursor-pointer text-center
             hover:text-gray-900 hover:bg-gray-300 duration-200 w-[200px]'>
