@@ -4,7 +4,7 @@ import ProjectList from '../data/ProjectList'
 
 const Projects = () => {
   return (
-    <div name="projects" className='w-full bg-gray-800 text-white flex flex-col
+    <div name="projects" className='w-full h-screen bg-gray-800 text-white flex flex-col
     items-center'>
       
       <div name='title/heading' className='w-full border-t-4 border-gray-900'>
@@ -13,9 +13,11 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-      
+
+      <div className='w-full h-full flex bg-blue-900 relative'>
       {ProjectList.map(project => (
-        <ProjectItem 
+          <ProjectItem 
+          key={project}
           images={project.images}
           title={project.title}
           tech={project.tech}
@@ -23,7 +25,7 @@ const Projects = () => {
           codeLink={project.codeLink}
           demoLink={project.demoLink}/>
         ))}
-
+      </div>
     </div>
   )
 }

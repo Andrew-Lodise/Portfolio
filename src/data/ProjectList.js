@@ -13,6 +13,17 @@ const ProjectList = [
     demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
   },
   {
+    title: 'Portfolio Website',
+    images: ["/assets/homepage.jpg", "/assets/skillspage.jpg"],
+    tech: ['React', 'Tailwind','Javascript'],
+    description: `I made this website to show my future employers that I am determinded
+    to enter the software development market and I'm not afraid to learn new technologies.
+    Before building this I new little about web development but I've learned so much just by
+    making this project.`,
+    codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
+    demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
+  }, 
+  {
     title: 'Stock Predictor CLI Tool',
     images: ["/assets/pup1.png", "/assets/pup3.png"],
     tech: ['Python', 'Matplotlib','Pandas', 'Numpy'],
@@ -22,17 +33,6 @@ const ProjectList = [
     codeLink: 'https://github.com/Andrew-Lodise/AlpacaTradingBot.git',
     demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
   },
-  {
-    title: 'Portfolio Website',
-    images: ["/assets/pup2.png", "/assets/pup4.png"],
-    tech: ['React', 'Tailwind','Javascript'],
-    description: `I made this website to show my future employers that I am determinded
-    to enter the software development market and I'm not afraid to learn new technologies.
-    Before building this I new little about web development but I've learned so much just by
-    making this project.`,
-    codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
-    demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
-  }
 ]
 
 export default ProjectList

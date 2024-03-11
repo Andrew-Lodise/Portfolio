@@ -24,7 +24,7 @@ const Home = () => {
       </p>
 
       <Link to="projects" spy={true} smooth={true} duration={500} 
-      className='group text-2xl flex items-center self-start border-2 border-gray-900 
+      className='group text-2xl flex items-center self-start border-[1px] border-gray-900 
       cursor-pointer ml-[15%] mt-2 text-[#111827] hover:bg-gray-900 hover:text-gray-300
       pr-1'>
         <h4 className='px-2'>
