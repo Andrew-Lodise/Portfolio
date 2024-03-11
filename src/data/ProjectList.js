@@ -1,6 +1,6 @@
 const ProjectList = [
   {
-    title: 'What to Wear',
+    title: 'Daily Outfit Recommender',
     images: ["/assets/wtw1.jpg", "/assets/wtw2.jpg"],
     tech: ['Python', 'Tkinter', 'REST api', 'Pandas'],
     description: `This app recommends outfits based on the weather data.
