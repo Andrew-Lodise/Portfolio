@@ -4,10 +4,10 @@ import { GoArrowRight } from "react-icons/go";
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen relative bg-gray-300 text-gray-900'>
+    <div name='home' className='w-full h-screen bg-gray-300 text-gray-900'>
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center 
       pt-[10vh]'>
-        <h1 className=' text-responsive-xl font-semibold leading-none'>
+        <h1 className='text-responsive-xl font-bold leading-none'>
           Andrew Lodise
         </h1>
 
@@ -25,8 +25,8 @@ const Home = () => {
         </p>
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
-        className='group text-2xl flex items-center self-start border-[1px] border-gray-900 
-        cursor-pointer mt-2  text-[#111827] hover:bg-gray-900 hover:text-gray-300
+        className='group md:text-button sm:text-md flex items-center self-start border-[1px] border-gray-900 
+        cursor-pointer mt-2 hover:bg-gray-900 hover:text-gray-300
         pr-1'>
           <h4 className='px-2'>
             View Projects

@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <div name="skills" className='w-full h-screen bg-gray-300 text-gray-900'>
       <div className='h-full w-full flex flex-col'>
-        <h1 className='text-4xl mt-[11vh] pl-[10vw]'>
+        <h1 className='text-test-head mt-[11vh] pl-[10vw]'>
           Skills
         </h1>
         
