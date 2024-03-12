@@ -10,11 +10,14 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-      'test-head': 'calc(4vh + 16px)',
+      'head': 'calc(4vh + 16px)',
       'form-input': 'calc(2vh + 5px)',
       'button': 'calc(2vh + 5px)',
+      'skill-nav': 'calc(2.3vh + 5px)',
+      'skill-sm': 'calc(2vh + 2px)',
+      'skill-icon': 'calc(7vh + 10px)',
       'responsive-sm': 'clamp(14px, 1.5vw, 30px)',
-      'responsive-md': 'clamp(0px, 1.5vw + 1rem, 40px)',  
+      'responsive-md': 'clamp(0px, 1.5vw + 1rem, 30px)',  
       'responsive-xl': 'clamp(30px, 7vw + 1rem, 70px)'},
       fontFamily: {
         greatVibes: ['"Great Vibes"', ...defaultTheme.fontFamily.sans]

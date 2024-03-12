@@ -17,7 +17,7 @@ const Contact = () => {
       className='w-full h-full flex flex-col items-center justify-center'>
         <form action="POST" className='flex flex-col gap-y-4 text-form-input
          text-gray-300 w-[80%] md:w-[60%] lg:w-[40%]'>
-          <h1 className='text-test-head leading-none'>
+          <h1 className='text-head leading-none'>
             Connect with me!
           </h1> 
           <input type="text" placeholder='Name' 
