@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <Projects />
+      {/**<Projects /> */}
       <Skills />
       <Contact />
     </div>
