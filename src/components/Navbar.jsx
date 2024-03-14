@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleBarClick = () => setMiniMenu(!miniMenu);
 
   return (
-    <div className='relative z-50'>
+    <div className='relative z-50 w-full'>
       {/** navbar */}
       <div className="fixed w-[100%] flex md:justify-between justify-end items-center bg-gray-900
        text-gray-300 h-[10%] max-h-[10%] border-b-[1px] border-gray-300">

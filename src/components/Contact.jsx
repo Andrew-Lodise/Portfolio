@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdKeyboardArrowUp } from "react-icons/md";
 import {Link} from "react-scroll"
+import { IoIosMail } from "react-icons/io";
 
 const Contact = () => {
   return (
@@ -27,8 +28,12 @@ const Contact = () => {
           <textarea type="text" rows="5" placeholder='Message' 
           className='bg-gray-900 border-[1px] border-gray-300 px-2'/>
           <button className='self-start border-[1px] border-gray-300 text-button
-          px-2 hover:bg-gray-300 hover:text-gray-900 duration-200'>
-            Submit
+          px-2 hover:bg-gray-300 hover:text-gray-900 duration-200 flex items-center gap-2
+          group overflow-hidden'>
+            <p>
+              Submit
+            </p>
+            <IoIosMail className='text-3xl group-hover:translate-x-10 duration-200'/>
           </button> 
         </form>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      {/**<Projects /> */}
+      <Projects />
       <Skills />
       <Contact />
     </div>

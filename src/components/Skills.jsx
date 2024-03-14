@@ -1,8 +1,8 @@
 import {React, useState} from 'react';
 import { FaGithub, FaDocker, FaPython, FaJava, FaReact, FaNode } from "react-icons/fa";
 import { SiKubernetes } from "react-icons/si";
-import { DiHaskell, DiMongodb, DiMysql } from "react-icons/di";
-import { SiC, SiTailwindcss, SiCplusplus  } from "react-icons/si";
+import { DiHaskell, DiMongodb } from "react-icons/di";
+import { SiTailwindcss, SiCplusplus  } from "react-icons/si";
 import {Link} from "react-scroll";
 import {GiUfo} from "react-icons/gi";
 import { MdKeyboardArrowUp } from "react-icons/md";
@@ -30,7 +30,7 @@ const Skills = () => {
           <li className='text-center w-1/3 border-r-[1px] border-gray-900
           cursor-pointer transition-opacity'
           onClick={() => setPageIndex(0)}>
-            <p className={pageIndex === 0 ? "duration-300 opacity-100" : 
+            <p className={pageIndex === 0 ? "duration-300 opacity-100 bg-gray-200" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               General
             </p>
@@ -38,29 +38,28 @@ const Skills = () => {
           <li className='text-center w-1/3 border-r-[1px] border-gray-900
           cursor-pointer hover:opacity-100'
           onClick={() => setPageIndex(1)}>
-            <p className={pageIndex === 1 ? "duration-300 opacity-100" : 
+            <p className={pageIndex === 1 ? "duration-300 opacity-100 bg-gray-200" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               Web Dev
             </p>
           </li>
           <li className='text-center w-1/3 cursor-pointer'
           onClick={() => setPageIndex(2)}>
-            <p className={pageIndex === 2 ? "duration-300 opacity-100" : 
+            <p className={pageIndex === 2 ? "duration-300 opacity-100 bg-gray-200" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               Dev Ops
             </p>
           </li>
         </ul>
 
-        <div name="page content" className='relative transition-opacity w-full h-full 
-         md:text-skill-sm md:leading-6 text-xs'>
-          <div name="general language" 
-          className={pageIndex === 0 ? "absolute duration-500 h-full" :
-          "absolute h-full opacity-0 duration-500"}>
+        <div name="page content" className='relative transition-opacity w-full h-full
+         text-xs md:text-sm lg:text-base xl:text-lg'>
+          <div name="general language" className={`absolute h-full duration-500 
+          ${pageIndex === 0 ? 'opacity-100' : 'opacity-0'}`}>
             <div name="gen lang content" className='w-full h-full flex flex-col 
              justify-evenly overflow-hidden'>
               <div name="java" className='flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw] '>
                 <FaJava className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Java is the language I was taught at university. I have a very deep understanding 
@@ -68,7 +67,7 @@ const Skills = () => {
                 </p>
               </div>
               <div name="python" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <FaPython className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Python is the language I used for the majority of my person projects. I've
@@ -77,7 +76,7 @@ const Skills = () => {
                 </p>
               </div>
               <div name="haskell" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <DiHaskell className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Haskell is the language I was taught during a functional programming class
@@ -86,9 +85,8 @@ const Skills = () => {
                 </p>
               </div>
               <div name="c/c++" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <SiCplusplus className='mr-2 text-skill-icon'/>
-                <SiC className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   C and C++ are both languages I was introduced to early in my career,
                   one of the first computer science. I learned comp sci basics with C++
@@ -99,11 +97,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div name="Web Dev" className={pageIndex === 1 ? "absolute duration-500 h-full" :
-          "absolute h-full opacity-0 duration-500"}>
+          <div name="Web Dev" className={`absolute h-full duration-500 
+          ${pageIndex === 1 ? 'opacity-100' : 'opacity-0'}`}>
             <div name="web dev content" className='w-full h-full flex flex-col justify-evenly'>
               <div name="react" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <FaReact className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   React is the front end library I have the most experience with. I took a 400 level
@@ -113,7 +111,7 @@ const Skills = () => {
               </div>
 
               <div name="tailwind" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <SiTailwindcss className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Tailwind is the CSS framework that I have the most experience with. I build this website
@@ -122,7 +120,7 @@ const Skills = () => {
               </div>
 
               <div name="express/node" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <FaNode className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Node and express are what I've used when learning backend development.
@@ -132,8 +130,7 @@ const Skills = () => {
               </div>
 
               <div name="sql/mongo" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
-                <DiMysql className='text-skill-icon'/>
+              justify-left md:pl-[10vw]'>
                 <DiMongodb className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Mongodb and sql are data tools I've used for classes and projects. I have
@@ -144,11 +141,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div name="Dev ops" className={pageIndex === 2 ? "absolute duration-500 h-full" :
-          "absolute h-full opacity-0 duration-500"}>
+          <div name="Dev ops" className={`absolute h-full duration-500 
+          ${pageIndex === 2 ? 'opacity-100' : 'opacity-0'}`}>
             <div name="dev ops content" className='w-full h-full flex flex-col justify-evenly'>
               <div name="git" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <FaGithub className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Github/git is the only version control system I've ever used. I've been using it
@@ -157,7 +154,7 @@ const Skills = () => {
                 </p>
               </div>
               <div name="docker" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <FaDocker className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Docker is a containerization platform I'm most familiar with. I understand the basics 
@@ -165,7 +162,7 @@ const Skills = () => {
                 </p>
               </div>
               <div name="kubernetes" className='w-[100%] flex items-center
-              justify-left pl-[10vw]'>
+              justify-left md:pl-[10vw]'>
                 <SiKubernetes className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
                   Kubernetes is the deployment tool I'm familiar with. In a cloud computing class
