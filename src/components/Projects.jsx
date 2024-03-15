@@ -47,7 +47,7 @@ const Projects = () => {
               {ProjectList.map(project => (
                 <div key={project.id} className='w-full h-full flex-shrink-0 flex-grow-0
                 flex justify-center '>
-                  <div className='h-full w-[80%] border-[1px] border-gray-300 flex flex-col'>
+                  <div className='h-full w-[80%] flex flex-col'>
                     <h3 className='text-project-lg w-full text-center underline'>
                       {project.title}
                     </h3>
