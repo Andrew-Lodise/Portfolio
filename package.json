@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Andrew-Lodise.github.io/portfolio",
+  "homepage": "https://Andrew-Lodise.github.io/Portfolio",
   "name": "portfolio-walkthrough",
   "version": "0.1.0",
   "private": true,
@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "<version>",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
     "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.1"
   }
