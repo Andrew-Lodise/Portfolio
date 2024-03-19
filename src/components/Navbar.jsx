@@ -9,7 +9,7 @@ const Navbar = () => {
   const [miniMenu, setMiniMenu] = useState(false);
   const handleBarClick = () => setMiniMenu(!miniMenu);
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/1q-Ewebz2l3s0sa1-dQhj-LsR_hV35lCW/view?usp=sharing','_blank');
+    window.open('https://drive.google.com/file/d/17L4yR1k02iBPW0PKED1RNpNsrXsssUSL/view?usp=sharing','_blank');
   };
   const openGithub = () => {
     window.open('https://github.com/Andrew-Lodise','_blank');

@@ -59,39 +59,37 @@ const Skills = () => {
             <div name="gen lang content" className='w-full h-full flex flex-col 
              justify-evenly overflow-hidden'>
               <div name="java" className='flex items-center
-              justify-left md:pl-[10vw] '>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <FaJava className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Java is the language I was taught at university. I have a very deep understanding 
-                  of the object oriented programming paradigm used by this language.  
+                Skilled in Java, I have a solid foundation in object-oriented programming from 
+                university studies, with practical experience in developing efficient, scalable 
+                software solutions.
                 </p>
               </div>
               <div name="python" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <FaPython className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Python is the language I used for the majority of my person projects. I've
-                  frequently used this language for things like connecting to apis, manipulating
-                  and plotting data, creating user interfaces, and practicing leetcode.  
+                Python, my go-to for personal projects, I’ve used in API integration, data 
+                manipulation, UI development, and algorithmic problem-solving.  
                 </p>
               </div>
               <div name="haskell" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <DiHaskell className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Haskell is the language I was taught during a functional programming class
-                  I took during my junior year. I really enjoyed that class and this class 
-                  allowed me to deepen my understanding of recurssion.
+                Introduced to Haskell in a functional programming class during my junior year, 
+                I developed a deeper understanding of recursion and functional paradigms.
                 </p>
               </div>
               <div name="c/c++" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <SiCplusplus className='mr-2 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  C and C++ are both languages I was introduced to early in my career,
-                  one of the first computer science. I learned comp sci basics with C++
-                  and learned about low level memory management/machine code with C 
-                  code as the example. 
+                C++ layed the groundwork for understanding programming fundamentals, 
+                while C deepened my insights into system-level 
+                concepts and assembly code conversion. 
                 </p>
               </div>
             </div>
@@ -101,41 +99,40 @@ const Skills = () => {
           ${pageIndex === 1 ? 'opacity-100' : 'opacity-0'}`}>
             <div name="web dev content" className='w-full h-full flex flex-col justify-evenly'>
               <div name="react" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <FaReact className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  React is the front end library I have the most experience with. I took a 400 level
-                  "user interfaces" class that focused completely on react, and I built this websit 
-                  using it.  
+                React, my most experienced front-end library, was extensively covered in a 
+                400-level user interfaces class and is the foundation of this website's 
+                development.  
                 </p>
               </div>
 
               <div name="tailwind" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <SiTailwindcss className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Tailwind is the CSS framework that I have the most experience with. I build this website
-                  with it's help and it's helped me learn css during the process.
+                Tailwind, the CSS framework I'm most versed in, was instrumental in building 
+                this website and significantly enhanced my CSS skills.
                 </p>
               </div>
 
               <div name="express/node" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <FaNode className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Node and express are what I've used when learning backend development.
-                  This includes creating servers and apis, along with connecting everything
-                  together with the use of a database.
+                Experienced in backend development with Node and Express, I've crafted servers 
+                and APIs, integrating them seamlessly with databases for full-stack functionality.
                 </p>
               </div>
 
               <div name="sql/mongo" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <DiMongodb className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Mongodb and sql are data tools I've used for classes and projects. I have
-                  used them each about the same and don't feel more or less comfortable with
-                  one or the other.
+                Equally skilled in MongoDB and SQL, I've utilized these databases across 
+                various classes and projects, demonstrating versatility and adaptability 
+                in data management.
                 </p>
               </div>
             </div>
@@ -145,29 +142,29 @@ const Skills = () => {
           ${pageIndex === 2 ? 'opacity-100' : 'opacity-0'}`}>
             <div name="dev ops content" className='w-full h-full flex flex-col justify-evenly'>
               <div name="git" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <FaGithub className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Github/git is the only version control system I've ever used. I've been using it
-                  consistently since I learned about it over 5 years ago. There's no better way to 
-                  store my code for my projects and I'd say I have a strong understanding of it. 
+                Exclusively using Git for version control over the past 5 years, I've 
+                mastered its functionalities, making it indispensable for managing my project 
+                code with proficiency. 
                 </p>
               </div>
               <div name="docker" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <FaDocker className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Docker is a containerization platform I'm most familiar with. I understand the basics 
-                  of containerizing an application in order to deploy it easily in the future.
+                Proficient with Docker, I grasp the fundamentals of containerization, 
+                streamlining the deployment process of applications for future scalability 
+                and efficiency.
                 </p>
               </div>
               <div name="kubernetes" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw]'>
+              justify-left md:pl-[10vw] pl-[2%]'>
                 <SiKubernetes className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                  Kubernetes is the deployment tool I'm familiar with. In a cloud computing class
-                  we were taught the basics of running and deploying kubernetes pods in 
-                  kubernetes clusters.
+                Familiar with Kubernetes, I've learned the essentials of orchestrating and 
+                deploying pods within clusters during a cloud computing class.
                 </p>
               </div>
             </div>

@@ -8,12 +8,12 @@ const ProjectList = [
     title: 'Outfit Recommender',
     images: [wtw1, wtw2],
     tech: ['Python', 'Tkinter', 'REST api', 'Pandas'],
-    description: `This app recommends outfits based on the weather data.
-    The user enters the city they are in and then generates an outfit for 
-    the day. allows a user to search for weather data for 
-    any location in the world using either a REST api (Open Weather Map) 
-    or by scraping the data from google. Based off the weather data and 
-    outfits input by the user, it gives an outfit reccomendation.`,
+    description: `This app delivers personalized outfit recommendations based on local weather 
+    conditions. Users input their city, and through the Open Weather Map API or web scraping, 
+    the app retrieves weather data. It then aligns this information with user-defined outfit 
+    preferences to suggest the ideal ensemble for the day. This project showcases a blend of 
+    practical utility and technical skill, including API integration, data processing, and 
+    user-centric design.`,
     codeLink: 'https://github.com/Andrew-Lodise/WhatToWear',
     demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
   },
@@ -21,10 +21,11 @@ const ProjectList = [
     title: 'Portfolio Website',
     images: [homepage, skillspage],
     tech: ['React', 'Tailwind','Javascript'],
-    description: `I made this website to show my future employers that I am determinded
-    to enter the software development market and I'm not afraid to learn new technologies.
-    Before building this I new little about web development but I've learned so much just by
-    making this project.`,
+    description: `I created this website to demonstrate my eagerness and capacity to 
+    break into the software development field. Starting with little knowledge in web 
+    development, I've rapidly scaled my skills through this very project. It showcases 
+    my dedication to learning new technologies and my ability to quickly adapt, offering 
+    a window into my potential as a future software developer.`,
     codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
     demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
   }

@@ -3,6 +3,16 @@ import {Link} from "react-scroll"
 import { GoArrowRight } from "react-icons/go";
 
 const Home = () => {
+  const homeBlurb = `Welcome to my portfolio! I'm on the verge of graduating from West Chester 
+  University, eagerly anticipating diving into the tech industry. My journey into programming 
+  began with an engineering class early in my college career, sparking a curiosity that led me 
+  to switch my major to computer science. While I've always had a knack for math, physics, and 
+  chemistry, it was the unique blend of creativity and problem-solving in computer science that 
+  truly captivated me. The field's dynamic nature, where building and creating innovative digital 
+  solutions goes hand in hand with the continuous acquisition of new skills, has been incredibly 
+  rewarding. Join me as I navigate the confluence of technical skill and creative vision in my 
+  projects.`
+
   return (
     <div name='home' className='w-full h-screen bg-gray-300 text-gray-900'>
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center 
@@ -16,12 +26,7 @@ const Home = () => {
         </h3>
 
         <p className=' text-responsive-sm lg:w-2/3 my-4'>
-        Welcome to my portfolio website. I am a soon-to-be graduate from West Chester University and
-        I'm excited to enter the field. I was first introduced to programming during an engineering 
-        class I took at the beginning of my college journey. The very next semester I switched my major 
-        to computer science. Growing up in school I had a talents in subjects such math, physics, and 
-        chemistry, but I also love building things. To me computer science is a creative process
-        that you can improve at as you gain more and more knowledge surronding software development.
+        {homeBlurb}
         </p>
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
