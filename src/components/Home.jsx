@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div name='home' className='w-full h-screen bg-gray-300 text-gray-900'>
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center 
-      pt-[10vh]'>
+      '>
         <h1 className='text-responsive-xl font-bold leading-none'>
           Andrew Lodise
         </h1>

@@ -8,6 +8,15 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 const Navbar = () => {
   const [miniMenu, setMiniMenu] = useState(false);
   const handleBarClick = () => setMiniMenu(!miniMenu);
+  const openResume = () => {
+    window.open('https://drive.google.com/file/d/1q-Ewebz2l3s0sa1-dQhj-LsR_hV35lCW/view?usp=sharing','_blank');
+  };
+  const openGithub = () => {
+    window.open('https://github.com/Andrew-Lodise','_blank');
+  };
+  const openLinkedin = () => {
+    window.open('https://www.linkedin.com/in/andrew-lodise','_blank');
+  };
 
   return (
     <div className='relative z-50 w-full'>
@@ -44,21 +53,23 @@ const Navbar = () => {
         </ul>
 
         <ul className='hidden md:flex justify-evenly w-[15%] pr-[5vw] text-button '>
-          <a href="https://github.com/Andrew-Lodise" target='_'
+          <button onClick={openGithub}
           className='border-[1px] border-gray-300 hover:bg-gray-300 hover:text-gray-900
           duration-300 ease-out'>
             <FaGithub  className='m-[4px]'/>
-          </a>
-          <a href="https://www.linkedin.com/in/andrew-lodise/" target='_'
+          </button>
+
+          <button onClick={openLinkedin}
           className='border-[1px] border-gray-300 hover:bg-gray-300 hover:text-gray-900
           duration-300 ease-out'>
             <FaLinkedin  className='m-[4px]'/>
-          </a>
-          <a href="http://tinyurl.com/5n7nw8xn" target='_'
+          </button>
+
+          <button onClick={openResume}
           className='border-[1px] border-gray-300 hover:bg-gray-300 hover:text-gray-900
           duration-300 ease-out'>
             <IoDocumentTextOutline  className='m-[4px]'/>
-          </a>
+          </button>
         </ul>
           
         {/* bar toggle for small screens*/}

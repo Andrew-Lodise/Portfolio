@@ -30,7 +30,7 @@ const Skills = () => {
           <li className='text-center w-1/3 border-r-[1px] border-gray-900
           cursor-pointer transition-opacity'
           onClick={() => setPageIndex(0)}>
-            <p className={pageIndex === 0 ? "duration-300 opacity-100 bg-gray-200" : 
+            <p className={pageIndex === 0 ? "duration-300 opacity-100 bg-gray-900 text-gray-300" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               General
             </p>
@@ -38,14 +38,14 @@ const Skills = () => {
           <li className='text-center w-1/3 border-r-[1px] border-gray-900
           cursor-pointer hover:opacity-100'
           onClick={() => setPageIndex(1)}>
-            <p className={pageIndex === 1 ? "duration-300 opacity-100 bg-gray-200" : 
+            <p className={pageIndex === 1 ? "duration-300 opacity-100 bg-gray-900 text-gray-300" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               Web Dev
             </p>
           </li>
           <li className='text-center w-1/3 cursor-pointer'
           onClick={() => setPageIndex(2)}>
-            <p className={pageIndex === 2 ? "duration-300 opacity-100 bg-gray-200" : 
+            <p className={pageIndex === 2 ? "duration-300 opacity-100 bg-gray-900 text-gray-300" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               Dev Ops
             </p>

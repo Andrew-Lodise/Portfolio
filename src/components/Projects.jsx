@@ -61,10 +61,10 @@ const Projects = () => {
                         className='hidden md:block h-full border-[1px] border-gray-300'/>
                       </div>
 
-                      <div name="tech" className='text-base md:text-project-tech w-full  flex justify-center'>
+                      <div name="tech" className='text-base md:text-project-tech w-full flex justify-center'>
                         <div className='flex w-full md:w-[50%] justify-evenly lg:py-2'>
-                          {project.tech.map((skill) => (
-                            <div className='font-semibold underline'>
+                          {project.tech.map(skill => (
+                            <div key={skill} className='font-semibold underline'>
                               {skill}
                             </div>
                           ))}
