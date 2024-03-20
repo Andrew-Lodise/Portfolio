@@ -38,34 +38,41 @@ const Contact = () => {
         
 
         <div name="content-div" className='w-full flex flex-col items-center my-auto'>
-          <ul className='flex flex-col w-[60%] md:flex-row justify-center text-lg
-          items-center gap-y-2 mb-8 lg:text-2xl '>
-            <button className='flex items-center mx-2 px-2 border-[1px] border-gray-300 
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[150px] justify-center'
+          <h1 className='text-2xl lg:text-3xl leading-none w-[80%] md:w-[60%] lg:w-[40%]'>
+            Links
+          </h1>
+          <ul className='flex w-[80%] md:w-[60%] lg:w-[40%] 
+          text-sm items-center md:text-lg lg:text-2xl justify-between'>
+            <button className='flex items-center px-2 border-[1px] border-gray-300 
+            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[130px] md:w-[150px]
+            lg:w-[200px] justify-center'
             onClick={openLinkedin}>
               Linkedin
               <FaLinkedin className='ml-2'/>
             </button>
-            <button className='flex items-center mx-2 px-2 border-[1px] border-gray-300 
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[150px] justify-center'
+            <button className='flex items-center px-2 border-[1px] border-gray-300 
+            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[130px] md:w-[150px]
+            lg:w-[200px] justify-center'
             onClick={openGithub}>
               Github
               <FaGithub className='ml-2'/>
             </button>
-            <button className='flex items-center mx-2 px-2 border-[1px] border-gray-300 
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[150px] justify-center'
+            <button className='flex items-center px-2 border-[1px] border-gray-300 
+            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[130px] md:w-[150px]
+            lg:w-[200px] justify-center'
             onClick={openResume}>
               Resume
               <IoDocumentTextOutline className='ml-2'/>
             </button>
           </ul>
-        
+
+
+          <h1 className='text-2xl leading-none lg:text-3xl w-[80%] md:w-[60%] lg:w-[40%] mt-8'>
+            Send me a message!
+          </h1>
           <form action="https://getform.io/f/eapwdyxb" method='POST' 
-          className='flex flex-col gap-y-4 text-form-inputtext-gray-300 
-          w-[80%] md:w-[60%] lg:w-[40%] mt-12'>
-            <h1 className='text-2xl leading-none'>
-              Send me a message!
-            </h1> 
+          className='flex flex-col gap-y-4 text-form-input text-gray-300 
+          w-[80%] md:w-[60%] lg:w-[40%] '> 
             <input type="text" placeholder='Name' name="name" 
             className='bg-gray-900 border-[1px] border-gray-300 px-2 '/>
             <input type="text" placeholder='Email' name="email" 

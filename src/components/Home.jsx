@@ -8,10 +8,7 @@ const Home = () => {
   began with an engineering class early in my college career, sparking a curiosity that led me 
   to switch my major to computer science. While I've always had a knack for math, physics, and 
   chemistry, it was the unique blend of creativity and problem-solving in computer science that 
-  truly captivated me. The field's dynamic nature, where building and creating innovative digital 
-  solutions goes hand in hand with the continuous acquisition of new skills, has been incredibly 
-  rewarding. Join me as I navigate the confluence of technical skill and creative vision in my 
-  projects.`
+  truly captivated me.`
 
   return (
     <div name='home' className='w-full h-screen bg-gray-300 text-gray-900'>
