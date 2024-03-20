@@ -25,7 +25,7 @@ const Home = () => {
           Software Developer
         </h3>
 
-        <p className=' text-responsive-sm lg:w-2/3 my-4'>
+        <p className=' text-responsive-sm lg:w-2/3 my-4 font-medium'>
         {homeBlurb}
         </p>
 

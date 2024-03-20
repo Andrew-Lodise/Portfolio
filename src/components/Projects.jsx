@@ -78,7 +78,7 @@ const Projects = () => {
                       </div>  
 
                       <div name="buttons" className='flex justify-center
-                      text-project-button  gap-x-2 mt-auto mb-2'>
+                      text-project-button gap-x-2 my-2'>
                         <a href={project.codeLink} className='border-[1px] border-gray-300
                         hover:text-gray-900 hover:bg-gray-300 text-center px-2'>
                           View Code
