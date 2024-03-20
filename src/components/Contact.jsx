@@ -42,22 +42,22 @@ const Contact = () => {
             Links
           </h1>
           <ul className='flex w-[80%] md:w-[60%] lg:w-[40%] 
-          text-sm items-center md:text-lg lg:text-2xl justify-between'>
-            <button className='flex items-center px-2 border-[1px] border-gray-300 
+          text-base items-center md:text-lg lg:text-2xl justify-between'>
+            <button className='flex items-center md:px-2 border-[1px] border-gray-300 
             hover:text-gray-900 hover:bg-gray-300 duration-200 w-[130px] md:w-[150px]
             lg:w-[200px] justify-center'
             onClick={openLinkedin}>
               Linkedin
               <FaLinkedin className='ml-2'/>
             </button>
-            <button className='flex items-center px-2 border-[1px] border-gray-300 
+            <button className='flex items-center md:px-2 border-[1px] border-gray-300 
             hover:text-gray-900 hover:bg-gray-300 duration-200 w-[130px] md:w-[150px]
             lg:w-[200px] justify-center'
             onClick={openGithub}>
               Github
               <FaGithub className='ml-2'/>
             </button>
-            <button className='flex items-center px-2 border-[1px] border-gray-300 
+            <button className='flex items-center md:px-2 border-[1px] border-gray-300 
             hover:text-gray-900 hover:bg-gray-300 duration-200 w-[130px] md:w-[150px]
             lg:w-[200px] justify-center'
             onClick={openResume}>

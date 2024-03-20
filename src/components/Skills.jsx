@@ -62,33 +62,34 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaJava className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Skilled in Java, I have a solid foundation in object-oriented programming from 
-                university studies, with practical experience in developing efficient, scalable 
-                software solutions.
+                experienced within <strong>Java</strong>, I have a solid foundation in 
+                object-oriented programming from university studies, with practical experience 
+                in developing efficient, scalable software solutions.
                 </p>
               </div>
               <div name="python" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaPython className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Python, my go-to for personal projects, I’ve used in API integration, data 
-                manipulation, UI development, and algorithmic problem-solving.  
+                <strong>Python</strong>, my go-to for personal projects, I’ve used in API 
+                integration, data manipulation, UI development, and algorithmic problem-solving.  
                 </p>
               </div>
               <div name="haskell" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
                 <DiHaskell className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Introduced to Haskell in a functional programming class during my junior year, 
-                I developed a deeper understanding of recursion and functional paradigms.
+                Introduced to <strong>Haskell</strong> in a functional programming class during 
+                my junior year, I developed a deeper understanding of recursion and 
+                functional paradigms.
                 </p>
               </div>
               <div name="c/c++" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
                 <SiCplusplus className='mr-2 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                C++ layed the groundwork for understanding programming fundamentals, 
-                while C deepened my insights into system-level 
+                <strong>C++</strong> layed the groundwork for understanding programming 
+                fundamentals, while <strong>C</strong> deepened my insights into system-level 
                 concepts and assembly code conversion. 
                 </p>
               </div>
@@ -102,9 +103,9 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaReact className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                React, my most experienced front-end library, was extensively covered in a 
-                400-level user interfaces class and is the foundation of this website's 
-                development.  
+                <strong>React</strong>, my most experienced front-end library, was extensively 
+                covered in a 400-level user interfaces class and is the foundation of this 
+                website's development.  
                 </p>
               </div>
 
@@ -112,8 +113,8 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <SiTailwindcss className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Tailwind, the CSS framework I'm most versed in, was instrumental in building 
-                this website and significantly enhanced my CSS skills.
+                <strong>Tailwind</strong>, the CSS framework I'm most versed in, was instrumental 
+                in building this website and significantly enhanced my CSS skills.
                 </p>
               </div>
 
@@ -121,8 +122,9 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaNode className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Experienced in backend development with Node and Express, I've crafted servers 
-                and APIs, integrating them seamlessly with databases for full-stack functionality.
+                Experienced in backend development with <strong>Node</strong> and 
+                <strong>Express</strong>, I've crafted servers and APIs, integrating
+                them seamlessly with databases for full-stack functionality.
                 </p>
               </div>
 
@@ -130,9 +132,9 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <DiMongodb className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Equally skilled in MongoDB and SQL, I've utilized these databases across 
-                various classes and projects, demonstrating versatility and adaptability 
-                in data management.
+                Equally confortable with <strong>MongoDB</strong> and <strong>SQL</strong>, 
+                I've utilized these databases across various classes and projects,
+                demonstrating versatility and adaptability in data management.
                 </p>
               </div>
             </div>
@@ -145,26 +147,27 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaGithub className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Exclusively using Git for version control over the past 5 years, I've 
-                mastered its functionalities, making it indispensable for managing my project 
-                code with proficiency. 
+                Exclusively using <strong>Git</strong> for version control over the past 5 
+                years, I've mastered its functionalities, making it indispensable for
+                managing my project code with proficiency. 
                 </p>
               </div>
               <div name="docker" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaDocker className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Proficient with Docker, I grasp the fundamentals of containerization, 
-                streamlining the deployment process of applications for future scalability 
-                and efficiency.
+                Proficient with <strong>Docker</strong>, I grasp the fundamentals of 
+                containerization, streamlining the deployment process of applications
+                for future scalability and efficiency.
                 </p>
               </div>
               <div name="kubernetes" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
                 <SiKubernetes className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Familiar with Kubernetes, I've learned the essentials of orchestrating and 
-                deploying pods within clusters during a cloud computing class.
+                Familiar with <strong>Kubernetes</strong>, I've learned the essentials 
+                of orchestrating and deploying pods within clusters during a cloud
+                computing class.
                 </p>
               </div>
             </div>
