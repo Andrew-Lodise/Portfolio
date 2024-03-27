@@ -62,7 +62,7 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaJava className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                experienced within <strong>Java</strong>, I have a solid foundation in 
+                experienced with <strong>Java</strong>, I have a solid foundation in 
                 object-oriented programming from university studies, with practical experience 
                 in developing efficient, scalable software solutions.
                 </p>
@@ -122,8 +122,7 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaNode className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                Experienced in backend development with <strong>Node</strong> and 
-                <strong>Express</strong>, I've crafted servers and APIs, integrating
+                Experienced in backend development with <strong>Node</strong> and <strong>Express</strong>, I've crafted servers and APIs, integrating
                 them seamlessly with databases for full-stack functionality.
                 </p>
               </div>

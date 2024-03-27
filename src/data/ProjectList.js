@@ -15,7 +15,7 @@ const ProjectList = [
     practical utility and technical skill, including API integration, data processing, and 
     user-centric design.`,
     codeLink: 'https://github.com/Andrew-Lodise/WhatToWear',
-    demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
+    demoLink: 'https://youtu.be/sO3RBy5uTPE'
   },
   {
     title: 'Portfolio Website',
@@ -27,7 +27,7 @@ const ProjectList = [
     my dedication to learning new technologies and my ability to quickly adapt, offering 
     a window into my potential as a future software developer.`,
     codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
-    demoLink: 'https://www.youtube.com/channel/UCZDvNqdyxfH1svEnaBV45Cw'
+    demoLink: 'https://youtu.be/sbKTMBsuHpk'
   }
 ]
 
