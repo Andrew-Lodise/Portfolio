@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-scroll"
 import { GoArrowRight } from "react-icons/go";
+import Navbar from './navbar'
 
 const Home = () => {
   const homeBlurb = `Welcome to my portfolio! I'm on the verge of graduating from West Chester 
@@ -12,8 +13,9 @@ const Home = () => {
 
   return (
     <div name='home' className='w-full h-screen bg-gray-300 text-gray-900'>
-      <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center 
-      '>
+      <Navbar />
+
+      <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center '>
         <h1 className='text-responsive-xl font-bold leading-none'>
           Andrew Lodise
         </h1>
@@ -28,8 +30,7 @@ const Home = () => {
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
         className='group md:text-button sm:text-md flex items-center self-start border-[1px] border-gray-900 
-        cursor-pointer mt-2 hover:bg-gray-900 hover:text-gray-300
-        pr-1'>
+        cursor-pointer mt-2 hover:bg-gray-900 hover:text-gray-300 pr-1 rounded-sm'>
           <h4 className='px-2'>
             View Projects
           </h4>

@@ -13,12 +13,12 @@ const Skills = () => {
   return (
     <div name="skills" className='w-full h-screen bg-gray-300 text-gray-900 relative'>
       <div className='h-full w-full flex flex-col'>
-        <h1 className='text-head mt-[11vh] pl-[10vw]'>
+        <h1 className='text-head mt-[1vh] pl-[10vw]'>
           Skills
         </h1>
         
-        <div name="backtotop" className='absolute mt-[12vh] right-[6%] hover:bg-gray-900
-        hover:text-gray-300 duration-200 cursor-pointer'>
+        <div name="backtotop" className='absolute mt-[2vh] right-[6%] hover:bg-gray-900
+        hover:text-gray-300 duration-200 cursor-pointer rounded-sm'>
           <Link to="home" spy={true} smooth={true} duration={500}>
             <MdKeyboardArrowUp size={40}/>
           </Link>
@@ -62,7 +62,7 @@ const Skills = () => {
               justify-left md:pl-[10vw] pl-[2%]'>
                 <FaJava className='mr-4 text-skill-icon'/>
                 <p className='max-w-[70%]'>
-                experienced with <strong>Java</strong>, I have a solid foundation in 
+                Experienced with <strong>Java</strong>, I have a solid foundation in 
                 object-oriented programming from university studies, with practical experience 
                 in developing efficient, scalable software solutions.
                 </p>
@@ -178,7 +178,7 @@ const Skills = () => {
           <Link to="contact" spy={true} smooth={true} duration={500} 
           className='group text-button flex items-center self-start border-[1px] border-gray-900 
           cursor-pointer ml-[2%] md:ml-[10%] mt-2 text-gray-900 hover:bg-gray-900 
-          hover:text-gray-300 pr-1 mb-8 overflow-hidden'>
+          hover:text-gray-300 pr-1 mb-8 overflow-hidden rounded-sm'>
             <h4 className='px-2'>
               View Contact Page
             </h4>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars } from "react-icons/fa6";
+import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-scroll"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -8,6 +8,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 const Navbar = () => {
   const [miniMenu, setMiniMenu] = useState(false);
   const handleBarClick = () => setMiniMenu(!miniMenu);
+
   const openResume = () => {
     window.open('https://drive.google.com/file/d/17L4yR1k02iBPW0PKED1RNpNsrXsssUSL/view?usp=sharing','_blank');
   };
@@ -19,96 +20,118 @@ const Navbar = () => {
   };
 
   return (
-    <div className='relative z-50 w-full'>
+    <header className='relative z-50 w-full bg-gray-300'>
       {/** navbar */}
-      <div className="fixed w-[100%] flex md:justify-between justify-end items-center bg-gray-900
-       text-gray-300 h-[10%] max-h-[10%] border-b-[1px] border-gray-300">
-        {/* menu */}
-        <ul className='hidden md:flex ml-[10vw] w-[50%] text-button
-        justify-between'>     
-            <Link to="home" spy={true} smooth={true} duration={500}
-            className='border-[1px] border-gray-300 cursor-pointer 
-            hover:text-gray-900 hover:bg-gray-300 duration-300 w-[10vw]
-             min-w-fit text-center px-2 ease-in-out'>
-              Home
-            </Link>
-            <Link to="projects" spy={true} smooth={true} duration={500} 
-            className='border-[1px] border-gray-300 cursor-pointer 
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[10vw]
-             min-w-fit text-center px-2'>
-              Projects
-            </Link>
-            <Link to="skills" spy={true} smooth={true} duration={500} 
-            className='border-[1px] border-gray-300 cursor-pointer 
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[10vw]
-             min-w-fit text-center px-2'>
-              Skills
-            </Link>
-            <Link to="contact" spy={true} smooth={true} duration={500} 
-            className='border-[1px] border-gray-300 cursor-pointer 
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[10vw]
-             min-w-fit text-center px-2'>
-              Contact
-            </Link>
-        </ul>
+      <div className="w-full pt-4 flex items-center justify-end text-gray-900 text-base font-semibold">
+        {/** menu buttons and external links */}
+        <div className='w-full hidden md:flex text-2xl'>
+          {/* menu/main buttons (home/projects/skills/contact) */}
+          <ul className='flex flex-grow justify-center gap-x-8'>
+            <li>
+              <Link to="home" spy={true} smooth={true} duration={500}
+              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="projects" spy={true} smooth={true} duration={500} 
+              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
+                Projects
+              </Link>
+            </li> 
+            <li>
+              <Link to="skills" spy={true} smooth={true} duration={500} 
+              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" spy={true} smooth={true} duration={500} 
+              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
+                Contact
+              </Link>
+            </li>      
+          </ul>
 
-        <ul className='hidden md:flex justify-evenly w-[15%] pr-[5vw] text-button '>
-          <button onClick={openGithub}
-          className='border-[1px] border-gray-300 hover:bg-gray-300 hover:text-gray-900
-          duration-300 ease-out'>
-            <FaGithub  className='m-[4px]'/>
-          </button>
+            {/** external links (ghub, Linked in, Resume) */}
+          <ul className='flex gap-x-2 absolute right-[1vw]'>
+            <li>
+              <button onClick={openGithub}
+              className='hover:bg-gray-900 hover:text-gray-300
+              duration-300 ease-out rounded-sm'>
+              <FaGithub  className='m-[4px]'/>
+              </button>
+            </li>
 
-          <button onClick={openLinkedin}
-          className='border-[1px] border-gray-300 hover:bg-gray-300 hover:text-gray-900
-          duration-300 ease-out'>
-            <FaLinkedin  className='m-[4px]'/>
-          </button>
+            <li>
+              <button onClick={openLinkedin}
+              className='hover:bg-gray-900 hover:text-gray-300
+              duration-300 ease-out rounded-sm'>
+              <FaLinkedin  className='m-[4px]'/>
+              </button>
+            </li>
 
-          <button onClick={openResume}
-          className='border-[1px] border-gray-300 hover:bg-gray-300 hover:text-gray-900
-          duration-300 ease-out'>
-            <IoDocumentTextOutline  className='m-[4px]'/>
-          </button>
-        </ul>
-          
-        {/* bar toggle for small screens*/}
-        <div className='md:hidden cursor-pointer border-[1px] p-2 border-gray-300
-        z-10 mr-2 hover:bg-gray-300 text-gray-300 hover:text-gray-800 duration-200
-        max-h-[100%]'
-        onClick={handleBarClick}>
-          <FaBars size={20}
-          className=' max-h-[100%]'/> 
+            <li>
+              <button onClick={openResume}
+              className='hover:bg-gray-900 hover:text-gray-300
+              duration-300 ease-out rounded-sm'>
+              <IoDocumentTextOutline  className='m-[4px]'/>
+              </button>
+            </li>
+          </ul>
         </div>
+        
+          
+        {/* bar toggle button for small screens*/}
+        <div className='md:hidden cursor-pointer rounded-sm
+        z-10 mr-4 hover:bg-gray-900 text-gray-900 hover:text-gray-300 duration-200
+        max-h-[100%] p-1 text-xl'
+        onClick={handleBarClick}>
+          <div className={!miniMenu ? 'flex items-center gap-2' : 'hidden'}>
+            <h1>Menu</h1>
+          </div>
+
+          <div className={miniMenu ? `flex text-gray-300 hover:text-gray-900
+           hover:bg-gray-300 rounded p-1` : 'hidden'}>
+            <RxCross1 />
+          </div>
+          
+        </div>
+
+        {/** mini popout menu */}
         <ul className={!miniMenu ? 'hidden' : `absolute top-0 left-0 w-full h-screen bg-gray-900 
         flex flex-col gap-y-6 items-center justify-center duration-200 text-2xl text-gray-300`}>
             <Link to="home" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='border-[1px] border-gray-300 px-[5px] cursor-pointer text-center
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[60%]'>
+            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
+            duration-200 rounded-sm px-2'>
               Home
             </Link>
             <Link to="projects" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='border-[1px] border-gray-300 px-[5px] cursor-pointer text-center
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[60%]'>
+            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
+            duration-200 rounded-sm px-2'>
               Projects
             </Link>
             <Link to="skills" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='border-[1px] border-gray-300 px-[5px] cursor-pointer text-center
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[60%]'>
+            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
+            duration-200 rounded-sm px-2'>
               Skills
             </Link>
             <Link to="contact" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='border-[1px] border-gray-300 px-[5px] cursor-pointer text-center
-            hover:text-gray-900 hover:bg-gray-300 duration-200 w-[60%]'>
+            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
+            duration-200 rounded-sm px-2'>
               Contact
             </Link>
         </ul>
       </div>
-    </div>
+    </header>
   )
 }
 export default Navbar
