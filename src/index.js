@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Main from './components/Main';
-import WhatToWear from './components/WhatToWear';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Project from './components/routes/Project';
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <Main />
   },
   {
-    path: "/Portfolio/Whattowear",
-    element: <WhatToWear />
+    path: "/Portfolio/Projects/:projectId",
+    element: <Project />,
   }
 ])
 

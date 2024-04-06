@@ -6,6 +6,8 @@ import skillspage from "../assets/skillspage.JPG"
 const ProjectList = [
   {
     title: 'Outfit Recommender',
+    name: `WhatToWear`,
+    id: 0,
     images: [wtw1, wtw2],
     tech: ['Python', 'Tkinter', 'REST api', 'Pandas'],
     description: `This app delivers personalized outfit recommendations based on local weather 
@@ -14,20 +16,26 @@ const ProjectList = [
     preferences to suggest the ideal ensemble for the day. This project showcases a blend of 
     practical utility and technical skill, including API integration, data processing, and 
     user-centric design.`,
+    shortDescription: `Python program to reccomend a outfit based on todays weather in any location.`,
+    purpose: 'This app was created to automate the task of selecting an outfit for the day',
     codeLink: 'https://github.com/Andrew-Lodise/WhatToWear',
-    demoLink: 'https://youtu.be/sO3RBy5uTPE'
+    embedLink: 'https://www.youtube.com/embed/sO3RBy5uTPE'
   },
   {
     title: 'Portfolio Website',
+    name: `Portfolio`,
+    id: 1,
     images: [homepage, skillspage],
     tech: ['React', 'Tailwind','Javascript'],
-    description: `I created this website to demonstrate my eagerness and capacity to 
-    break into the software development field. Starting with little knowledge in web 
-    development, I've rapidly scaled my skills through this very project. It showcases 
-    my dedication to learning new technologies and my ability to quickly adapt, offering 
-    a window into my potential as a future software developer.`,
+    description: `This is a React application that uses react components to showcase my projects to future
+    employers and/or people that come across it. The homepage text is made using custom css size styling for
+    the font in order for the page to be responsive to any zoom/resize of the screen width and heigh. The
+    project page uses React Router to redirect the user to a specific page for each project. The skills page
+    is made with custom javascript in order to rotate through the tabs of skills.`,
+    shortDescription: `React website to showcase skills and projects.`,
+    purpose: 'This app was created to display my front-end engineering skills through showcasing my projects',
     codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
-    demoLink: 'https://youtu.be/sbKTMBsuHpk'
+    embedLink: 'https://www.youtube.com/embed/sbKTMBsuHpk'
   }
 ]
 

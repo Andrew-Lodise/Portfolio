@@ -90,7 +90,7 @@ const Contact = () => {
               <p>
                 Submit
               </p>
-              <IoIosMail className='text-3xl group-hover:text-gray-900 group-hover:translate-x-10 duration-500'/>
+              <IoIosMail className='text-3xl group-hover:text-gray-900 group-hover:translate-x-10 duration-1000 ease-in-out'/>
             </button> 
           </form>
         </div>
