@@ -24,8 +24,11 @@ module.exports = {
       'responsive-sm': 'clamp(14px, 1.5vw, 30px)',
       'responsive-md': 'clamp(0px, 1.5vw + 1rem, 30px)',  
       'responsive-xl': 'clamp(30px, 7vw + 1rem, 70px)'},
+
       fontFamily: {
-        greatVibes: ['"Great Vibes"', ...defaultTheme.fontFamily.sans]
+        inter: ['Inter', 'sans-serif'],
+        lora: ['Lora', 'serif'],
+        roboto: ['Roboto', 'sans-serif']
       },
       height: {
         "picture": "calc(30vw + 20px)",

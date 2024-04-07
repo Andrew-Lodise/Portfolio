@@ -32,7 +32,7 @@ const Contact = () => {
         hover:text-gray-900 duration-200 cursor-pointer rounded-sm'>
             <Link to="home" spy={true} smooth={true} duration={500}
             className='flex items-center pl-1'>
-              <h3>Back to home</h3>
+              <h3 className='hidden md:block'>Back to home</h3>
               <MdKeyboardArrowUp size={40}/>
             </Link>
           </div>

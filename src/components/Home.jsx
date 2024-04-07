@@ -16,25 +16,25 @@ const Home = () => {
       <Navbar />
 
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center flex-grow'>
-        <h1 className='text-responsive-xl font-bold leading-none'>
+        <h1 className='text-[48px]/[54px] md:text-[72px]/[72px] font-bold'>
           Andrew Lodise
         </h1>
 
-        <h3 className=' text-responsive-md font-semibold leading-none'>
-          Software Developer
+        <h3 className='text-[26px]/[36px] md:text-[46px]/[46px] font-semibold pb-4 lg:pb-8'>
+          Front-end Software Developer
         </h3>
 
-        <p className=' text-responsive-sm lg:w-2/3 my-4 font-medium'>
+        <p className='text-[16px]/[24px] md:text-[24px]/[30px] lg:w-[80%] pb-4 lg:pb-8 font-semibold '>
         {homeBlurb}
         </p>
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
-        className='group md:text-button sm:text-md flex items-center self-start border-[1px] border-gray-900 
-        cursor-pointer mt-2 hover:bg-gray-900 hover:text-gray-300 pr-1 rounded-sm'>
-          <h4 className='px-2'>
-            View Projects
+        className='group flex items-center self-start text-[24px] md:text-[30px]
+        cursor-pointer mt-2 pr-1 rounded-sm bg-blue-900 text-gray-300 hover:scale-[105%] duration-200'>
+          <h4 className='px-2  '>
+            View projects
           </h4>
-          <GoArrowRight size={30} className='transition-transform group-hover:rotate-90 
+          <GoArrowRight className='transition-transform group-hover:rotate-90 
           duration-300'/>
         </Link>
       </div>

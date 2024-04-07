@@ -24,7 +24,7 @@ export default function Project() {
        h-[10vh]'>
         <Link to='/Portfolio' className='absolute left-2 hover:bg-gray-300 hover:text-gray-900
         rounded-sm duration-200 px-2 text-3xl flex items-center'>
-          <FaArrowLeft className=''/>
+          <FaArrowLeft className='mr-1'/>
           <span className='hidden lg:block'>
             Homepage
           </span>
@@ -41,14 +41,21 @@ export default function Project() {
           border-gray-300 rounded-sm'/>
         </div>
 
-        <div name='text-content' className='flex flex-col text-base lg:text-xl lg:px-12 gap-y-4'>
+        <div name='text-content' className='flex flex-col text-base lg:text-xl lg:px-12 gap-y-4 w-[90%] lg:w-[80%] my-8'>
           <div>
             <strong>Purpose: </strong>
             <span>{project.purpose}</span>
           </div>
-          <div>
+          <div className='flex'>
             <strong>Technology: </strong>
-            <span>{project.tech}</span>
+            <span className='flex'>
+            {project.tech.map(skill => (
+                            <div key={skill} className='px-1'>
+                              {skill} 
+                            </div>
+                          ))}  
+
+            </span>
           </div>
           <div>
             <strong>Description: </strong>
@@ -57,7 +64,7 @@ export default function Project() {
         </div>
 
         <div name='video-content' className='flex w-full flex-col items-center justify-center'>
-          <h1 className='text-4xl'>
+          <h1 className='text-3xl'>
             Video Demo
           </h1>
           <iframe src={project.embedLink} title={`${project.name} Demo`} frameBorder="0"
@@ -70,7 +77,7 @@ export default function Project() {
         </div>
 
         <button onClick={() => openGithubLink(project.codeLink)}
-        className=' text-4xl border-[1px] border-gray-300 px-2 rounded-sm my-4
+        className=' text-3xl border-[1px] border-gray-300 px-2 rounded-sm my-8
         hover:bg-gray-300 hover:text-gray-900 duration-200 ease-in-out
         flex items-center'>
           <span>

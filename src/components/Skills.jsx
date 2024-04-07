@@ -3,7 +3,7 @@ import { FaGithub, FaDocker, FaPython, FaJava, FaReact, FaNode } from "react-ico
 import { SiKubernetes } from "react-icons/si";
 import { DiHaskell, DiMongodb } from "react-icons/di";
 import { SiTailwindcss, SiCplusplus  } from "react-icons/si";
-import {Link} from "react-scroll";
+import {Link as ScrollLink} from "react-scroll";
 import {GiUfo} from "react-icons/gi";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
@@ -13,15 +13,20 @@ const Skills = () => {
   return (
     <div name="skills" className='w-full h-screen bg-gray-300 text-gray-900 relative'>
       <div className='h-full w-full flex flex-col'>
-        <h1 className='text-head mt-[1vh] pl-[10vw]'>
-          Skills
-        </h1>
-        
-        <div name="backtotop" className='absolute mt-[2vh] right-[6%] hover:bg-gray-900
+        {/** title and up arrow */}
+        <div name="header" className='w-full h-[10vh] flex items-center
+        justify-between'>
+          <h1 className='text-head ml-[10vw] '>
+            Skills
+          </h1>
+          <div name="backtotop" className='absolute right-[6%] hover:bg-gray-900
         hover:text-gray-300 duration-200 cursor-pointer rounded-sm'>
-          <Link to="home" spy={true} smooth={true} duration={500}>
-            <MdKeyboardArrowUp size={40}/>
-          </Link>
+            <ScrollLink to="home" spy={true} smooth={true} duration={500}
+            className='flex items-center pl-1'>
+              <h3 className='hidden md:block'>Back to home</h3>
+              <MdKeyboardArrowUp size={40}/>
+            </ScrollLink>
+          </div>
         </div>
 
 
@@ -175,7 +180,7 @@ const Skills = () => {
 
         <div name='footer' className='w-full h-[16vh] mt-auto 
         flex flex-col'>
-          <Link to="contact" spy={true} smooth={true} duration={500} 
+          <ScrollLink to="contact" spy={true} smooth={true} duration={500} 
           className='group text-button flex items-center self-start border-[1px] border-gray-900 
           cursor-pointer ml-[2%] md:ml-[10%] mt-2 text-gray-900 hover:bg-gray-900 
           hover:text-gray-300 pr-1 mb-8 overflow-hidden rounded-sm'>
@@ -184,7 +189,7 @@ const Skills = () => {
             </h4>
             <GiUfo size={30} className='transition-transform group-hover:translate-y-[16px]
             duration-700'/>
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     </div>
