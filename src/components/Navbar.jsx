@@ -20,9 +20,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className='relative z-50 w-full bg-gray-300'>
+    <header className='relative z-50 w-full bg-[#EAEAEE] text-[#0F1F32]'>
       {/** navbar */}
-      <div className="w-full pt-4 flex items-center justify-end text-gray-900 text-base font-semibold">
+      <div className="w-full pt-4 flex items-center justify-end  text-base font-semibold">
         {/** menu buttons and external links */}
         <div className='w-full hidden md:flex text-2xl'>
           {/* menu/main buttons (home/projects/skills/contact) */}

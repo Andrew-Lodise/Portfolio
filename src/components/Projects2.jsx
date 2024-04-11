@@ -30,14 +30,14 @@ export default function Projects2() {
           {ProjectList.map(project => (
             <RouterLink to={`/Portfolio/Projects/${project.id}`} key={project.id}
             className=' rounded-sm w-[80%] h-[20%] mt-4 flex items-center justify-between 
-            hover:scale-[98%] duration-200 text-gray-300 border-2 border-gray-300'>
-              <span className='text-base md:text-2xl font-semibold text-center flex-grow max-w-[45%]'>
+            hover:scale-[98%] duration-200 text-gray-300 border-[1px] border-gray-300 overflow-hidden'>
+              <span className='text-base md:text-2xl font-semibold text-center flex-grow px-2'>
                 {project.title}
               </span>
-              <span className='text-lg w-[50%] hidden lg:flex px-4 justify-center text-center'>
+              <span className='text-lg w-[50%] hidden lg:flex px-4 justify-center text-center font-hind'>
                 {project.shortDescription}
               </span>
-              <span className='h-full w-[25%] flex items-center justify-end flex-grow p-[1px]'>
+              <span className='h-full w-[25%] flex items-center justify-end flex-grow p-[1px] min-w-[180px]'>
                 <img src={project.images[0]} alt="project" className='h-full object-scale-down'/>
               </span>
             </RouterLink>

@@ -12,7 +12,7 @@ const Home = () => {
   truly captivated me.`
 
   return (
-    <div name='home' className='w-full h-screen bg-gray-300 text-gray-900 flex flex-col'>
+    <div name='home' className='w-full h-screen bg-[#EAEAEE] text-black flex flex-col'>
       <Navbar />
 
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center flex-grow'>
@@ -24,14 +24,14 @@ const Home = () => {
           Front-end Software Developer
         </h3>
 
-        <p className='text-[16px]/[24px] md:text-[24px]/[30px] lg:w-[80%] pb-4 lg:pb-8 font-semibold '>
+        <p className='text-[16px]/[24px] md:text-[24px]/[30px] lg:w-[80%] pb-4 lg:pb-8 font-hind font-medium'>
         {homeBlurb}
         </p>
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
-        className='group flex items-center self-start text-[24px] md:text-[30px]
-        cursor-pointer mt-2 pr-1 rounded-sm bg-blue-900 text-gray-300 hover:scale-[105%] duration-200'>
-          <h4 className='px-2  '>
+        className='group flex items-center self-start text-[16px] md:text-[24px]
+        cursor-pointer mt-2 p-8 bg-[#1470AF] hover:bg-[#3F89BC] text-gray-300 duration-200'>
+          <h4 className='px-2 text-[#EAEAEE] font-medium'>
             View projects
           </h4>
           <GoArrowRight className='transition-transform group-hover:rotate-90 

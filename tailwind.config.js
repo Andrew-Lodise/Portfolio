@@ -26,9 +26,8 @@ module.exports = {
       'responsive-xl': 'clamp(30px, 7vw + 1rem, 70px)'},
 
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        lora: ['Lora', 'serif'],
-        roboto: ['Roboto', 'sans-serif']
+        montserrat: ['Montserrat'],
+        hind: ['Hind']
       },
       height: {
         "picture": "calc(30vw + 20px)",

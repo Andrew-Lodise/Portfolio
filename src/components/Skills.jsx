@@ -58,7 +58,7 @@ const Skills = () => {
         </ul>
 
         <div name="page content" className='relative transition-opacity w-full h-full
-         text-sm lg:text-base xl:text-lg'>
+         text-sm lg:text-base xl:text-lg font-hind'>
           <div name="general language" className={`absolute h-full duration-500 
           ${pageIndex === 0 ? 'opacity-100' : 'opacity-0'}`}>
             <div name="gen lang content" className='w-full h-full flex flex-col 

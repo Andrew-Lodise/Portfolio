@@ -34,14 +34,16 @@ export default function Project() {
         </h1>
       </header>
       <div name='content' className='w-full  flex flex-col items-center'>
-        <div name='images' className='h-[30vh] md:h-[40vh] w-full xl:w-[70%]  flex justify-evenly mt-4'>
+        <div name='images' className='h-[30vh] md:h-[40vh] w-full xl:w-[70%]  flex justify-evenly my-4'>
           <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
           border-gray-300 rounded-sm'/>
           <img src={project.images[1]} alt="" className=' h-full object-cover hidden lg:block border-[1px] 
           border-gray-300 rounded-sm'/>
         </div>
+        
 
-        <div name='text-content' className='flex flex-col text-base lg:text-xl lg:px-12 gap-y-4 w-[90%] lg:w-[80%] my-8'>
+        <div name='text-content' className='flex flex-col text-base lg:text-xl lg:px-12 gap-y-4 w-[90%] lg:w-[80%] my-8
+        font-hind'>
           <div>
             <strong>Purpose: </strong>
             <span>{project.purpose}</span>
@@ -50,11 +52,10 @@ export default function Project() {
             <strong>Technology: </strong>
             <span className='flex'>
             {project.tech.map(skill => (
-                            <div key={skill} className='px-1'>
-                              {skill} 
-                            </div>
-                          ))}  
-
+              <div key={skill} className='px-1'>
+                {skill} 
+              </div>
+            ))}  
             </span>
           </div>
           <div>
@@ -63,7 +64,17 @@ export default function Project() {
           </div>
         </div>
 
-        <div name='video-content' className='flex w-full flex-col items-center justify-center'>
+        <button onClick={() => openGithubLink(project.codeLink)}
+        className=' text-2xl md:text-3xl border-[1px] border-gray-300 px-2 rounded-sm my-8
+        hover:bg-gray-300 hover:text-gray-900 duration-200 ease-in-out
+        flex items-center'>
+          <span>
+            View Github Repository
+          </span>
+          <FaGithub className=' ml-2'/>
+        </button>
+
+        <div name='video-content' className='flex w-full flex-col items-center justify-center py-8'>
           <h1 className='text-3xl'>
             Video Demo
           </h1>
@@ -72,19 +83,9 @@ export default function Project() {
           className='w-[98%] h-[30vh] sm:w-[80%] sm:h-[40vh] md:h-[50vh] lg:w-[60%] lg:h-[50vh]
           xl:w-[60%] xl:h-[70vh] 
           border-[1px] border-gray-300 rounded-sm'>
-
           </iframe>
         </div>
 
-        <button onClick={() => openGithubLink(project.codeLink)}
-        className=' text-3xl border-[1px] border-gray-300 px-2 rounded-sm my-8
-        hover:bg-gray-300 hover:text-gray-900 duration-200 ease-in-out
-        flex items-center'>
-          <span>
-            View Github Repository
-          </span>
-          <FaGithub className=' ml-2'/>
-        </button>
 
       </div>
     </section>
