@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from "react-scroll"
 import { GoArrowRight } from "react-icons/go";
 import Navbar from './navbar'
+import Break from './Break'
 
 const Home = () => {
   const homeBlurb = `Welcome to my portfolio! I'm on the verge of graduating from West Chester 
@@ -12,7 +13,7 @@ const Home = () => {
   truly captivated me.`
 
   return (
-    <div name='home' className='w-full h-screen bg-[#EAEAEE] text-black flex flex-col'>
+    <div name='home' className='w-full h-screen bg-primary text-quaternary flex flex-col'>
       <Navbar />
 
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center flex-grow'>
@@ -30,14 +31,16 @@ const Home = () => {
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
         className='group flex items-center self-start text-[16px] md:text-[24px]
-        cursor-pointer mt-2 p-8 bg-[#1470AF] hover:bg-[#3F89BC] text-gray-300 duration-200'>
-          <h4 className='px-2 text-[#EAEAEE] font-medium'>
+        cursor-pointer mt-2 p-8 bg-primary hover:bg-tertiary text-gray-300 duration-200
+        hover:text-black border-tertiary border-[1px] shadow-based rounded-md'>
+          <h4 className='px-2 font-medium'>
             View projects
           </h4>
           <GoArrowRight className='transition-transform group-hover:rotate-90 
           duration-300'/>
         </Link>
       </div>
+      <Break />
       
       
     </div>

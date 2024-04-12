@@ -5,9 +5,23 @@ import skillspage from "../assets/skillspage.JPG"
 
 const ProjectList = [
   {
+    title: 'Stock Lookup',
+    name: `Stock Lookup`,
+    id: 0,
+    images: [wtw1, wtw2],
+    tech: ['React', 'Tailwind', 'Javascript', 'AlphaVantage API'],
+    description: `This app lists a few of the most well known stocks. The user then can choose a stock and
+    redirect that stocks subpage. When it lands on the subpage it will see two graphs showing the stocks
+    short term data and long terma data.`,
+    shortDescription: `React app connected to stock API displaying stock data`,
+    purpose: 'This app was created to automate the task of selecting an outfit for the day',
+    codeLink: 'https://github.com/Andrew-Lodise/vite-stock-app.git',
+    embedLink: 'https://www.youtube.com/embed/sO3RBy5uTPE',
+  },
+  {
     title: 'Outfit Recommender',
     name: `WhatToWear`,
-    id: 0,
+    id: 1,
     images: [wtw1, wtw2],
     tech: ['Python', 'Tkinter', 'REST api', 'Pandas'],
     description: `This app delivers personalized outfit recommendations based on local weather 
@@ -19,12 +33,12 @@ const ProjectList = [
     shortDescription: `Python program to reccomend a outfit based on todays weather in any location.`,
     purpose: 'This app was created to automate the task of selecting an outfit for the day',
     codeLink: 'https://github.com/Andrew-Lodise/WhatToWear',
-    embedLink: 'https://www.youtube.com/embed/sO3RBy5uTPE'
+    embedLink: 'https://www.youtube.com/embed/sO3RBy5uTPE',
   },
   {
     title: 'Portfolio Website',
     name: `Portfolio`,
-    id: 1,
+    id: 2,
     images: [homepage, skillspage],
     tech: ['React', 'Tailwind','Javascript'],
     description: `This is a React application that uses react components to showcase my projects to future
@@ -35,7 +49,7 @@ const ProjectList = [
     shortDescription: `React website to showcase skills and projects.`,
     purpose: 'This app was created to display my front-end engineering skills through showcasing my projects',
     codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
-    embedLink: 'https://www.youtube.com/embed/sbKTMBsuHpk'
+    embedLink: 'https://www.youtube.com/embed/sbKTMBsuHpk',
   }
 ]
 

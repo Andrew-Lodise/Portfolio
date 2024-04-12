@@ -35,6 +35,17 @@ module.exports = {
       },
       width: {
         "picture": "calc(30vw + 20px)"
+      },
+      colors: {
+        primary: '#0f0f32',
+        secondary: '#ffffff',
+        tertiary: '#EE9D92',
+        quaternary: '#feffff',
+      },
+      boxShadow: {
+        based: '0 0 20px rgba(238,157,146, .9)',
+        basedSmall: '0 0 10px rgba(238,157,146, .9)',
+        basedHover: '0 0 30px rgba(238,157,146, .9)'
       }
     },
   },

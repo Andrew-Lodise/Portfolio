@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className='relative z-50 w-full bg-[#EAEAEE] text-[#0F1F32]'>
+    <header className='relative z-50 w-full bg-primary text-quaterany'>
       {/** navbar */}
       <div className="w-full pt-4 flex items-center justify-end  text-base font-semibold">
         {/** menu buttons and external links */}
@@ -29,28 +29,28 @@ const Navbar = () => {
           <ul className='flex flex-grow justify-center gap-x-8'>
             <li>
               <Link to="home" spy={true} smooth={true} duration={500}
-              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              className='cursor-pointer hover:text-tertiary  duration-300
               min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
                 Home
               </Link>
             </li>
             <li>
               <Link to="projects" spy={true} smooth={true} duration={500} 
-              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              className='cursor-pointer hover:text-tertiary duration-300
               min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
                 Projects
               </Link>
             </li> 
             <li>
               <Link to="skills" spy={true} smooth={true} duration={500} 
-              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              className='cursor-pointer hover:text-tertiary duration-300
               min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
                 Skills
               </Link>
             </li>
             <li>
               <Link to="contact" spy={true} smooth={true} duration={500} 
-              className='cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-300
+              className='cursor-pointer hover:text-tertiary duration-300
               min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
                 Contact
               </Link>
@@ -61,24 +61,21 @@ const Navbar = () => {
           <ul className='flex gap-x-2 absolute right-[1vw]'>
             <li>
               <button onClick={openGithub}
-              className='hover:bg-gray-900 hover:text-gray-300
-              duration-300 ease-out rounded-sm'>
+              className='hover:text-tertiary duration-300 ease-out rounded-sm'>
               <FaGithub  className='m-[4px]'/>
               </button>
             </li>
 
             <li>
               <button onClick={openLinkedin}
-              className='hover:bg-gray-900 hover:text-gray-300
-              duration-300 ease-out rounded-sm'>
+              className='hover:text-tertiary duration-300 ease-out rounded-sm'>
               <FaLinkedin  className='m-[4px]'/>
               </button>
             </li>
 
             <li>
               <button onClick={openResume}
-              className='hover:bg-gray-900 hover:text-gray-300
-              duration-300 ease-out rounded-sm'>
+              className='hover:text-tertiary duration-300 ease-out rounded-sm'>
               <IoDocumentTextOutline  className='m-[4px]'/>
               </button>
             </li>
