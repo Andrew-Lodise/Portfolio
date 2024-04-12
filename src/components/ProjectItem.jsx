@@ -6,7 +6,7 @@ const ProjectItem = (props) => {
     <Link to={`/Portfolio/projects/${props.projectId}`} 
     className='size-full border-tertiary border-[1px] shadow-basedSmall hover:scale-[102%]
     duration-200 ease-in-out rounded-md hover:shadow-basedHover flex items-center justify-center
-    text-3xl'>
+    text-3xl hover:text-tertiary'>
       <p>
         {props.name}
       </p>
