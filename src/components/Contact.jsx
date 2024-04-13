@@ -19,8 +19,8 @@ const Contact = () => {
   };
 
   return (
-    <div name='contact' className='w-full h-screen bg-gray-900 
-     text-gray-300 pt-[1vh] flex-col'>
+    <div name='contact' className='w-full h-screen bg-primary 
+     text-secondary pt-[1vh] flex-col'>
       <div className='h-full w-full flex flex-col'>
         {/** title and up arrow */}
         <div name="header" className='w-full h-[10vh] flex items-center
@@ -40,10 +40,11 @@ const Contact = () => {
         
         {/** links and form (rest of content) */}
         <div name="content-div" className='w-full flex flex-col items-center  flex-grow justify-evenly'>
-          <ul className='flex flex-col md:flex-row text-2xl items-center justify-between gap-x-8 gap-y-4'>
-            <li>
-              <button className='flex items-center md:px-2 border-[1px] border-gray-300 
-             hover:text-gray-900 hover:bg-gray-300 duration-200 justify-center rounded-sm px-1'
+          <ul className='text-3xl grid grid-cols-1 grid-rows-3 w-full max-w-[400px] gap-8 p-4  h-[30vh]'>
+            <li className='group'>
+              <button className='flex items-center md:px-2 border-[1px] border-secondary 
+              w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
+              duration-200 justify-center rounded-md hover:text-tertiary px-1'
               onClick={openLinkedin}>
                 Linkedin
               <FaLinkedin className='ml-2'/>
@@ -51,8 +52,9 @@ const Contact = () => {
             </li>
 
             <li>
-              <button className='flex items-center md:px-2 border-[1px] border-gray-300 
-             hover:text-gray-900 hover:bg-gray-300 duration-200 justify-center rounded-sm px-1'
+              <button className='flex items-center md:px-2 border-[1px] border-secondary 
+              w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
+              duration-200 justify-center rounded-md hover:text-tertiary px-1'
               onClick={openGithub}>
                 Github
               <FaGithub className='ml-2'/>
@@ -60,8 +62,9 @@ const Contact = () => {
             </li>
 
             <li>
-              <button className='flex items-center md:px-2 border-[1px] border-gray-300 
-             hover:text-gray-900 hover:bg-gray-300 duration-200 justify-center rounded-sm px-1'
+              <button className='flex items-center md:px-2 border-[1px] border-secondary 
+              w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
+              duration-200 justify-center rounded-md hover:text-tertiary px-1'
               onClick={openResume}>
                 Resume
                 <IoDocumentTextOutline className='ml-2'/>
@@ -71,21 +74,26 @@ const Contact = () => {
           </ul>
 
 
+          <div className='w-full h-[20px] my-4 border-b-[4px] border-tertiary rotate-[-5deg]'>
+
+          </div>
+
           
           <form action="https://getform.io/f/eapwdyxb" method='POST' 
-          className='flex flex-col gap-y-4 text-form-input text-gray-300 
+          className='flex flex-col gap-y-4 text-form-input text-secondary
           w-[80%] md:w-[60%] lg:w-[40%] '> 
             <h1 className='text-2xl'>
               Send a message!
             </h1>
             <input type="text" placeholder='Name' name="name" 
-            className='bg-gray-900 border-[1px] border-gray-300 px-2 rounded-sm'/>
+            className='bg-primary border-[1px] border-secondary px-2 rounded-md shadow-basedSmall
+             focus-within:shadow-basedHover focus-within:border-tertiary'/>
             <input type="text" placeholder='Email' name="email" 
-            className=' bg-gray-900 border-[1px] border-gray-300 px-2 rounded-sm'/>
+            className=' bg-primary border-[1px] border-secondary px-2 rounded-md'/>
             <textarea type="text" rows="5" placeholder='Message' name="message" 
-            className='bg-gray-900 border-[1px] border-gray-300 px-2 rounded-sm'/>
-            <button className='self-start border-[1px] border-gray-300 text-button
-            px-2 hover:bg-gray-300 hover:text-gray-900 flex items-center gap-2
+            className='bg-primary border-[1px] border-secondary px-2 rounded-md'/>
+            <button className='self-start border-[1px] border-secondary text-button
+            px-2 hover:bg-tertiary hover:text-gray-900 flex items-center gap-2
             group overflow-hidden rounded-sm'>
               <p>
                 Submit
