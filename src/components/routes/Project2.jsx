@@ -5,6 +5,11 @@ import { FaArrowLeft, FaGithub } from "react-icons/fa";
 
 export default function Project2() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts
+  }, []); // Empty dependency array ensures this effect only runs once
+
+
   const openGithubLink = (link) => {
     window.open(link,'_blank');
   };
@@ -17,27 +22,36 @@ export default function Project2() {
     <section className='w-full bg-primary text-secondary'>
       <header className='w-full flex items-center font-semibold justify-center py-4
        h-[10vh]'>
-        <Link to='/Portfolio' className='absolute left-2 hover:bg-gray-300 hover:text-gray-900
+        <Link to='/Portfolio' className='absolute left-2 hover:text-tertiary
         rounded-sm duration-200 px-2 text-3xl flex items-center'>
           <FaArrowLeft className='mr-1'/>
           <span className='hidden lg:block'>
             Homepage
           </span>
         </Link>
-        <h1 className='cursor-default text-3xl md:text-4xl w-full text-center bg-black'>
+        <h1 className='cursor-default text-3xl md:text-4xl w-full text-center '>
           {project.title}
         </h1>
       </header>
-      <div className='w-full h-auto bg-black flex flex-col items-center'>
+      <div className='w-full h-auto  flex flex-col items-center'>
+        <div className='w-full px-4 m-4 flex justify-center'>
+          <button onClick={() => openGithubLink(project.codeLink)}
+          className='w-full max-w-[600px] border-[1px] border-secodnary text-2xl font-medium
+          rounded-md py-4 shadow-basedSmall hover:text-tertiary hover:border-tertiary
+          hover:shadow-basedHover duration-300 ease-in-out'>
+            Github Repository
+          </button>
+        </div>
+        
         <div className=' grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full p-4 gap-4'>
           <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
           border-secondary rounded-md shadow-basedSmall'/>
           <img src={project.images[1]} alt="" className=' h-full object-cover hidden lg:block border-[1px] 
           border-secondary rounded-md shadow-basedSmall'/>
         </div>
-        <div className='w-full flex flex-col gap-6'>
-          <div className='w-full flex flex-col px-4 max-w-[1000px]'>
-            <h2 className='w-full text-2xl font-bold'>
+        <div className='w-full flex flex-col gap-6 items-center'>
+          <div className='w-full flex flex-col px-4 max-w-[750px]'>
+            <h2 className='w-full text-2xl font-bold text-center '>
               Purpose 
             </h2>
             <p className='w-full text-lg'>
@@ -48,7 +62,8 @@ export default function Project2() {
             <h2 className='w-full text-2xl font-bold text-center'>
               Technology
             </h2>
-            <ul className='w-full text-lg grid grid-rows-2 grid-cols-2 max-w-[600px]'>
+            <ul className={`w-full text-lg grid grid-rows-${Math.ceil(project.tech.length / 2)} 
+            grid-cols-2 max-w-[600px]`}>
               {project.tech.map(skill => (
                 <li key={skill} className='w-full text-center'>
                   {skill} 
@@ -56,7 +71,7 @@ export default function Project2() {
               ))}  
             </ul>
           </div>
-          <div className='w-full flex flex-col px-4'>
+          <div className='w-full flex flex-col px-4 max-w-[750px]'>
             <h2 className='w-full text-2xl font-bold'>
               About 
             </h2>
@@ -65,69 +80,17 @@ export default function Project2() {
             </p>
           </div>
         </div>
-        
 
-      </div>
-      
-
-
-
-
-      {/*old*/}
-      <div name='content' className='w-full  flex flex-col items-center mt-64'>
-        <div name='images' className='h-[30vh] md:h-[40vh] w-full xl:w-[70%]  flex justify-evenly my-4'>
-          <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
-          border-secondary rounded-sm'/>
-          <img src={project.images[1]} alt="" className=' h-full object-cover hidden lg:block border-[1px] 
-          border-secondary rounded-sm'/>
-        </div>
-        
-
-        <div name='text-content' className='flex flex-col text-base lg:text-xl lg:px-12 gap-y-4 w-[90%] lg:w-[80%] my-8
-        font-hind'>
-          <div>
-            <strong>Purpose: </strong>
-            <span>{project.purpose}</span>
-          </div>
-          <div className='flex'>
-            <strong>Technology: </strong>
-            <span className='flex'>
-            {project.tech.map(skill => (
-              <div key={skill} className='px-1'>
-                {skill} 
-              </div>
-            ))}  
-            </span>
-          </div>
-          <div>
-            <strong>Description: </strong>
-            <span>{project.description}</span>
-          </div>
-        </div>
-
-        <button onClick={() => openGithubLink(project.codeLink)}
-        className=' text-2xl md:text-3xl border-[1px] border-gray-300 px-2 rounded-sm my-8
-        hover:bg-gray-300 hover:text-gray-900 duration-200 ease-in-out
-        flex items-center'>
-          <span>
-            View Github Repository
-          </span>
-          <FaGithub className=' ml-2'/>
-        </button>
-
-        <div name='video-content' className='flex w-full flex-col items-center justify-center py-8'>
-          <h1 className='text-3xl'>
+        <div name='video-content' className='flex w-full flex-col items-center justify-center py-8 px-2'>
+          <h1 className='text-2xl font-semibold'>
             Video Demo
           </h1>
           <iframe src={project.embedLink} title={`${project.name} Demo`} frameBorder="0"
-          allow= "autoplay; clipboard-write" allowFullScreen
-          className='w-[98%] h-[30vh] sm:w-[80%] sm:h-[40vh] md:h-[50vh] lg:w-[60%] lg:h-[50vh]
-          xl:w-[60%] xl:h-[70vh] 
-          border-[1px] border-secondary rounded-sm'>
+          allow="autoplay; clipboard-write" allowFullScreen
+          className='w-full border-[1px] border-secondary rounded-md aspect-video
+          shadow-basedSmall max-w-[1000px]'>
           </iframe>
         </div>
-
-
       </div>
     </section>
   )
