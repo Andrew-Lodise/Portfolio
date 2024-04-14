@@ -85,45 +85,45 @@ const Navbar = () => {
           
         {/* bar toggle button for small screens*/}
         <div className='md:hidden cursor-pointer rounded-sm
-        z-10 mr-4 hover:bg-gray-900 text-gray-900 hover:text-gray-300 duration-200
+        z-10 mr-4 hover:bg-gray-900 hover:text-tertiary duration-300
         max-h-[100%] p-1 text-xl'
         onClick={handleBarClick}>
           <div className={!miniMenu ? 'flex items-center gap-2' : 'hidden'}>
             <h1>Menu</h1>
           </div>
 
-          <div className={miniMenu ? `flex text-gray-300 hover:text-gray-900
-           hover:bg-gray-300 rounded p-1` : 'hidden'}>
+          <div className={miniMenu ? `flex 
+           hover:text-tertiary rounded p-1` : 'hidden'}>
             <RxCross1 />
           </div>
           
         </div>
 
         {/** mini popout menu */}
-        <ul className={!miniMenu ? 'hidden' : `absolute top-0 left-0 w-full h-screen bg-gray-900 
-        flex flex-col gap-y-6 items-center justify-center duration-200 text-2xl text-gray-300`}>
+        <ul className={!miniMenu ? 'hidden' : `absolute top-0 left-0 w-full h-screen bg-primary 
+        flex flex-col gap-y-6 items-center justify-center duration-200 text-2xl text-secondary`}>
             <Link to="home" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
-            duration-200 rounded-sm px-2'>
+            className='cursor-pointer text-center hover:text-tertiary 
+            duration-300 ease-in-out rounded-sm px-2'>
               Home
             </Link>
             <Link to="projects" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
-            duration-200 rounded-sm px-2'>
+            className='cursor-pointer text-center hover:text-tertiary 
+            duration-300 ease-in-out rounded-sm px-2'>
               Projects
             </Link>
             <Link to="skills" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
-            duration-200 rounded-sm px-2'>
+            className='cursor-pointer text-center hover:text-tertiary 
+            duration-300 ease-in-out rounded-sm px-2'>
               Skills
             </Link>
             <Link to="contact" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
-            className='cursor-pointer text-center hover:text-gray-900 hover:bg-gray-300 
-            duration-200 rounded-sm px-2'>
+            className='cursor-pointer text-center hover:text-tertiary 
+            duration-300 ease-in-out rounded-sm px-2'>
               Contact
             </Link>
         </ul>

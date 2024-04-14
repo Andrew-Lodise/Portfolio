@@ -2,21 +2,24 @@ import wtw1 from "../assets/wtw1.JPG"
 import wtw2 from "../assets/wtw2.JPG"
 import homepage from "../assets/homepage.JPG"
 import skillspage from "../assets/skillspage.JPG"
+import stockLookup1 from '../assets/StockLoopup1.JPG'
+import stockLookup2 from '../assets/StockLoopup2.JPG'
+
 
 const ProjectList = [
   {
     title: 'Stock Lookup',
     name: `Stock Lookup`,
     id: 0,
-    images: [wtw1, wtw2],
+    images: [stockLookup1, stockLookup2],
     tech: ['React', 'Tailwind', 'Javascript', 'AlphaVantage API'],
     description: `This app lists a few of the most well known stocks. The user then can choose a stock and
     redirect that stocks subpage. When it lands on the subpage it will see two graphs showing the stocks
-    short term data and long terma data.`,
+    short term data and long terma data, and some analytics corresponding to that data.`,
     shortDescription: `React app connected to stock API displaying stock data`,
     purpose: 'This app was created to automate the task of selecting an outfit for the day',
     codeLink: 'https://github.com/Andrew-Lodise/vite-stock-app.git',
-    embedLink: 'https://www.youtube.com/embed/sO3RBy5uTPE',
+    embedLink: 'https://www.youtube.com/embed/XGFNThva8xc',
   },
   {
     title: 'Outfit Recommender',

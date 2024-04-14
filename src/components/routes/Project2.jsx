@@ -3,16 +3,11 @@ import { Link, useParams } from 'react-router-dom'
 import ProjectList from '../../data/ProjectList'
 import { FaArrowLeft, FaGithub } from "react-icons/fa";
 
-export default function Project() {
+export default function Project2() {
 
   const openGithubLink = (link) => {
     window.open(link,'_blank');
   };
-
-  // always be at the top
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const params = useParams()
   const id = params.projectId
@@ -29,11 +24,57 @@ export default function Project() {
             Homepage
           </span>
         </Link>
-        <h1 className='cursor-default text-3xl md:text-4xl max-w-[50%] text-center'>
+        <h1 className='cursor-default text-3xl md:text-4xl w-full text-center bg-black'>
           {project.title}
         </h1>
       </header>
-      <div name='content' className='w-full  flex flex-col items-center'>
+      <div className='w-full h-auto bg-black flex flex-col items-center'>
+        <div className=' grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full p-4 gap-4'>
+          <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
+          border-secondary rounded-md shadow-basedSmall'/>
+          <img src={project.images[1]} alt="" className=' h-full object-cover hidden lg:block border-[1px] 
+          border-secondary rounded-md shadow-basedSmall'/>
+        </div>
+        <div className='w-full flex flex-col gap-6'>
+          <div className='w-full flex flex-col px-4 max-w-[1000px]'>
+            <h2 className='w-full text-2xl font-bold'>
+              Purpose 
+            </h2>
+            <p className='w-full text-lg'>
+              {project.purpose}
+            </p>
+          </div>
+          <div className='w-full flex flex-col px-4 items-center'>
+            <h2 className='w-full text-2xl font-bold text-center'>
+              Technology
+            </h2>
+            <ul className='w-full text-lg grid grid-rows-2 grid-cols-2 max-w-[600px]'>
+              {project.tech.map(skill => (
+                <li key={skill} className='w-full text-center'>
+                  {skill} 
+                </li>
+              ))}  
+            </ul>
+          </div>
+          <div className='w-full flex flex-col px-4'>
+            <h2 className='w-full text-2xl font-bold'>
+              About 
+            </h2>
+            <p className='w-full text-lg'>
+              {project.description}
+            </p>
+          </div>
+        </div>
+        
+
+      </div>
+      
+
+
+
+
+      {/*old*/}
+      <div name='content' className='w-full  flex flex-col items-center mt-64'>
         <div name='images' className='h-[30vh] md:h-[40vh] w-full xl:w-[70%]  flex justify-evenly my-4'>
           <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
           border-secondary rounded-sm'/>
