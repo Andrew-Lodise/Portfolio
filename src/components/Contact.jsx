@@ -40,7 +40,7 @@ const Contact = () => {
         
         {/** links and form (rest of content) */}
         <div name="content-div" className='w-full flex flex-col items-center  flex-grow justify-evenly'>
-          <ul className='text-3xl grid grid-cols-1 grid-rows-3 w-full max-w-[400px] gap-8 p-4  h-[30vh]'>
+          <ul className='text-2xl grid grid-cols-1 grid-rows-3 w-full max-w-[400px] gap-2 p-4 h-[30vh]'>
             <li className='group'>
               <button className='flex items-center md:px-2 border-[1px] border-secondary 
               w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
@@ -74,13 +74,13 @@ const Contact = () => {
           </ul>
 
 
-          <div className='w-full h-[20px] my-4 border-b-[4px] border-tertiary rotate-[-5deg]'>
+          <div className='w-full h-[20px] my-4 border-b-[4px] border-tertiary '>
 
           </div>
 
           
           <form action="https://getform.io/f/eapwdyxb" method='POST' 
-          className='flex flex-col gap-y-4 text-form-input text-secondary
+          className='flex flex-col gap-y-2 text-form-input text-secondary
           w-[80%] md:w-[60%] lg:w-[40%] '> 
             <h1 className='text-2xl'>
               Send a message!

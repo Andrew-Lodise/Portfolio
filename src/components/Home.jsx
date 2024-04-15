@@ -17,15 +17,15 @@ const Home = () => {
       <Navbar />
 
       <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center flex-grow'>
-        <h1 className='text-[48px]/[54px] md:text-[72px]/[72px] font-bold'>
+        <h1 className='text-[48px]/[54px] lg:text-[72px]/[72px] font-bold'>
           Andrew Lodise
         </h1>
 
-        <h3 className='text-[26px]/[36px] md:text-[46px]/[46px] font-semibold pb-4 lg:pb-8'>
+        <h3 className='text-[26px]/[36px] lg:text-[46px]/[46px] font-semibold pb-4 lg:pb-8'>
           Front-end Software Developer
         </h3>
 
-        <p className='text-[16px]/[24px] md:text-[24px]/[30px] lg:w-[80%] pb-4 lg:pb-8 font-hind font-medium'>
+        <p className='text-[16px]/[24px] lg:text-[24px]/[30px] lg:w-[80%] pb-4 lg:pb-8 font-hind font-medium'>
         {homeBlurb}
         </p>
 

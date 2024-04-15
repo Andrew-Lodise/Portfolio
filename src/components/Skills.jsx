@@ -35,7 +35,7 @@ const Skills = () => {
           <li className='text-center w-1/3 border-r-[1px] border-tertiary
           cursor-pointer transition-opacity'
           onClick={() => setPageIndex(0)}>
-            <p className={pageIndex === 0 ? "duration-300 opacity-100 bg-secondary text-black" : 
+            <p className={pageIndex === 0 ? "duration-300 opacity-100 bg-tertiary text-black" : 
             "duration-300 opacity-30 hover:opacity-100"}>
               General
             </p>
@@ -65,36 +65,36 @@ const Skills = () => {
              justify-evenly overflow-hidden'>
               <div name="java" className='flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <FaJava className='mr-4 text-skill-icon text-tertiary'/>
+                <FaJava className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Experienced with <strong>Java</strong>, I have a solid foundation in 
+                Experienced with <strong className='text-tertiary'>Java</strong>, I have a solid foundation in 
                 object-oriented programming from university studies, with practical experience 
                 in developing efficient, scalable software solutions.
                 </p>
               </div>
               <div name="python" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <FaPython className='mr-4 text-skill-icon text-tertiary'/>
+                <FaPython className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                <strong>Python</strong>, my go-to for personal projects, I’ve used in API 
+                <strong className='text-tertiary'>Python</strong>, my go-to for personal projects, I’ve used in API 
                 integration, data manipulation, UI development, and algorithmic problem-solving.  
                 </p>
               </div>
               <div name="haskell" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <DiHaskell className='mr-4 text-skill-icon text-tertiary'/>
+                <DiHaskell className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Introduced to <strong>Haskell</strong> in a functional programming class during 
+                Introduced to <strong className='text-tertiary'>Haskell</strong> in a functional programming class during 
                 my junior year, I developed a deeper understanding of recursion and 
                 functional paradigms.
                 </p>
               </div>
               <div name="c/c++" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <SiCplusplus className='mr-2 text-skill-icon text-tertiary'/>
+                <SiCplusplus className='mr-2 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                <strong>C++</strong> layed the groundwork for understanding programming 
-                fundamentals, while <strong>C</strong> deepened my insights into system-level 
+                <strong className='text-tertiary'>C++</strong> layed the groundwork for understanding programming 
+                fundamentals, while <strong className='text-tertiary'>C</strong> deepened my insights into system-level 
                 concepts and assembly code conversion. 
                 </p>
               </div>
@@ -106,9 +106,9 @@ const Skills = () => {
             <div name="web dev content" className='w-full h-full flex flex-col justify-evenly'>
               <div name="react" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <FaReact className='mr-4 text-skill-icon text-tertiary'/>
+                <FaReact className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                <strong>React</strong>, my most experienced front-end library, was extensively 
+                <strong className='text-tertiary'>React</strong>, my most experienced front-end library, was extensively 
                 covered in a 400-level user interfaces class and is the foundation of this 
                 website's development.  
                 </p>
@@ -116,27 +116,28 @@ const Skills = () => {
 
               <div name="tailwind" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <SiTailwindcss className='mr-4 text-skill-icon text-tertiary'/>
+                <SiTailwindcss className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                <strong>Tailwind</strong>, the CSS framework I'm most versed in, was instrumental 
+                <strong className='text-tertiary'>Tailwind</strong>, the CSS framework I'm most versed in, was instrumental 
                 in building this website and significantly enhanced my CSS skills.
                 </p>
               </div>
 
               <div name="express/node" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <FaNode className='mr-4 text-skill-icon text-tertiary'/>
+                <FaNode className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Experienced in backend development with <strong>Node</strong> and <strong>Express</strong>, I've crafted servers and APIs, integrating
+                Experienced in backend development with <strong className='text-tertiary'>Node </strong>and <strong 
+                className='text-tertiary'>Express</strong>, I've crafted servers and APIs, integrating
                 them seamlessly with databases for full-stack functionality.
                 </p>
               </div>
 
               <div name="sql/mongo" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <DiMongodb className='mr-4 text-skill-icon text-tertiary'/>
+                <DiMongodb className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Equally confortable with <strong>MongoDB</strong> and <strong>SQL</strong>, 
+                Equally confortable with <strong className='text-tertiary'>MongoDB</strong> and < strong className='text-tertiary'>SQL</strong>, 
                 I've utilized these databases across various classes and projects,
                 demonstrating versatility and adaptability in data management.
                 </p>
@@ -149,27 +150,27 @@ const Skills = () => {
             <div name="dev ops content" className='w-full h-full flex flex-col justify-evenly'>
               <div name="git" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <FaGithub className='mr-4 text-skill-icon text-tertiary'/>
+                <FaGithub className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Exclusively using <strong>Git</strong> for version control over the past 5 
+                Exclusively using <strong className='text-tertiary'>Git</strong> for version control over the past 5 
                 years, I've mastered its functionalities, making it indispensable for
                 managing my project code with proficiency. 
                 </p>
               </div>
               <div name="docker" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <FaDocker className='mr-4 text-skill-icon text-tertiary'/>
+                <FaDocker className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Proficient with <strong>Docker</strong>, I grasp the fundamentals of 
+                Proficient with <strong className='text-tertiary'>Docker</strong>, I grasp the fundamentals of 
                 containerization, streamlining the deployment process of applications
                 for future scalability and efficiency.
                 </p>
               </div>
               <div name="kubernetes" className='w-[100%] flex items-center
               justify-left md:pl-[10vw] pl-[2%]'>
-                <SiKubernetes className='mr-4 text-skill-icon text-tertiary'/>
+                <SiKubernetes className='mr-4 text-skill-icon text-secondary'/>
                 <p className='max-w-[70%]'>
-                Familiar with <strong>Kubernetes</strong>, I've learned the essentials 
+                Familiar with <strong className='text-tertiary'>Kubernetes</strong>, I've learned the essentials 
                 of orchestrating and deploying pods within clusters during a cloud
                 computing class.
                 </p>
