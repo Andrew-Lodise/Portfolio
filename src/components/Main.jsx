@@ -1,17 +1,17 @@
 import React from 'react'
 import Home from './Home'
-import Projects3 from './Projects3'
-import Skills2 from './Skills2'
-import Contact2 from './Contact2'
+import Projects from './Projects'
+import Skills from './Skills'
+import Contact from './Contact'
 
 
 export default function Main() {
   return (
     <>
       <Home />
-      <Projects3 />
-      <Skills2 />
-      <Contact2 />
+      <Projects />
+      <Skills />
+      <Contact />
     </>
     
   )

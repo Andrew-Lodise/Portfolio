@@ -1,199 +1,163 @@
-import {React, useState} from 'react';
+import React, {useState} from 'react'
 import { FaGithub, FaDocker, FaPython, FaJava, FaReact, FaNode } from "react-icons/fa";
 import { SiKubernetes } from "react-icons/si";
-import { DiHaskell, DiMongodb } from "react-icons/di";
-import { SiTailwindcss, SiCplusplus  } from "react-icons/si";
-import {Link as ScrollLink} from "react-scroll";
-import {GiUfo} from "react-icons/gi";
-import { MdKeyboardArrowUp } from "react-icons/md";
+import { DiMongodb } from "react-icons/di";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
 
 const Skills = () => {
-  const [pageIndex, setPageIndex] = useState(0)
+  const [pageIndex, setPageIndex] = useState(0);
 
   return (
-    <div name="skills" className='w-full h-screen bg-primary text-secondary relative'>
-      <div className='h-full w-full flex flex-col'>
-        {/** title and up arrow */}
-        <div name="header" className='w-full h-[10vh] flex items-center
-        justify-between'>
-          <h1 className='text-head ml-[10vw] '>
-            Skills
-          </h1>
-          <div name="backtotop" className='absolute right-[6%] hover:bg-gray-900
-        hover:text-gray-300 duration-200 cursor-pointer rounded-sm'>
-            <ScrollLink to="home" spy={true} smooth={true} duration={500}
-            className='flex items-center pl-1'>
-              <h3 className='hidden md:block'>Back to home</h3>
-              <MdKeyboardArrowUp size={40}/>
-            </ScrollLink>
+    <section name='skills' className='w-full h-screen bg-primary text-secondary 
+    border-b-[1px] border-tertiary flex flex-col items-center'>
+      {/** navigation */}
+      <ul name='nav' className='w-full h-[10vh] grid grid-rows-1 grid-cols-3 gap-2 text-2xl p-2
+      max-w-[1000px] mt-2 font-medium'>
+        <li onClick={() => setPageIndex(0)}
+        className={`flex items-center justify-center border-[1px] border-secondary rounded-md
+        cursor-pointer shadow-basedSmall duration-300 ease-in-out
+        hover:text-tertiary hover:border-tertiary hover:shadow-basedHover
+        ${pageIndex === 0 ? `text-tertiary border-tertiary shadow-basedHover 
+        duration-300 ease-in-out`: ''}`}>
+          General
+        </li>
+        <li onClick={() => setPageIndex(1)}
+        className={`flex items-center justify-center border-[1px] border-secondary rounded-md
+        cursor-pointer shadow-basedSmall duration-300 ease-in-out
+        hover:text-tertiary hover:border-tertiary hover:shadow-basedHover
+        ${pageIndex === 1 ? `text-tertiary border-tertiary shadow-basedHover 
+        duration-300 ease-in-out`: ''}`}>
+          Web
+        </li>
+        <li onClick={() => setPageIndex(2)}
+        className={`flex items-center justify-center border-[1px] border-secondary rounded-md
+        cursor-pointer shadow-basedSmall duration-300 ease-in-out
+        hover:text-tertiary hover:border-tertiary hover:shadow-basedHover
+        ${pageIndex === 2 ? `text-tertiary border-tertiary shadow-basedHover 
+        duration-300 ease-in-out`: ''}`}>
+          Devops
+        </li>
+      </ul>
+
+      <div className='w-full max-w-[1200px] h-[90vh] relative transition-opacity lg:text-xl'>
+        {/** general */}
+        <div className={`w-full h-full  absolute duration-500 ease-in-out
+        grid grid-cols-1 grid-rows-3 p-4 gap-4 
+        ${pageIndex === 0 ? `opacity-100`: `opacity-0`}`}>
+          {/** Java */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <FaJava  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#EB2025]'/>
+            <p className='w-[70%] pr-4'>
+            Most experienced with <strong className='text-[#EB2025]'>Java</strong>, 
+            I have a strong foundation in object-oriented programming from university studies
+            using this langugage.
+            
+            </p>
+          </div>
+          {/** JavaScript */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <IoLogoJavascript  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#F0DB4F]'/>
+            <p className='w-[70%] p-2'>
+              Currently studying <strong className='text-[#F0DB4F]'>JavaScript</strong> to aid my front-end
+              development journey. This language is used for all of the react projects shown on this website.
+            </p>
+          </div>
+          {/** JavaScript */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <FaPython  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#3872A1]'/>
+            <p className='w-[70%] p-2'>
+              <strong className='text-[#3872A1]'>Python</strong> is a langugage I've used for personal projects,
+              image processing, and solving leetcode problems.
+            </p>
           </div>
         </div>
 
-
-        <ul name="nav" className='flex mt-2 justify-evenly text-skill-nav
-        border-b-[1px] border-tertiary  font-semibold'>
-          <li className='text-center w-1/3 border-r-[1px] border-tertiary
-          cursor-pointer transition-opacity'
-          onClick={() => setPageIndex(0)}>
-            <p className={pageIndex === 0 ? "duration-300 opacity-100 bg-tertiary text-black" : 
-            "duration-300 opacity-30 hover:opacity-100"}>
-              General
+        {/** web */}
+        <div className={`w-full h-full  absolute duration-500 ease-in-out
+        grid grid-cols-1 grid-rows-4 p-4 gap-4 
+        ${pageIndex === 1 ? `opacity-100`: `opacity-0`}`}>
+          {/** React */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <FaReact  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#03D8FF]'/>
+            <p className='w-[70%] pr-4'>
+            <strong className='text-[#03D8FF]'>React</strong> is currently my main focus. 
+            This front end library was first introduced to me during a User Interface class,
+            and I continue to use it for my front end projects.          
             </p>
-          </li>
-          <li className='text-center w-1/3 border-r-[1px] border-tertiary
-          cursor-pointer hover:opacity-100'
-          onClick={() => setPageIndex(1)}>
-            <p className={pageIndex === 1 ? "duration-300 opacity-100 bg-tertiary text-black" : 
-            "duration-300 opacity-30 hover:opacity-100"}>
-              Web Dev
-            </p>
-          </li>
-          <li className='text-center w-1/3 cursor-pointer'
-          onClick={() => setPageIndex(2)}>
-            <p className={pageIndex === 2 ? "duration-300 opacity-100 bg-tertiary text-black" : 
-            "duration-300 opacity-30 hover:opacity-100"}>
-              Dev Ops
-            </p>
-          </li>
-        </ul>
-
-        <div name="page content" className='relative transition-opacity w-full h-full
-         text-sm lg:text-base xl:text-lg font-hind'>
-          <div name="general language" className={`absolute h-full duration-500 
-          ${pageIndex === 0 ? 'opacity-100' : 'opacity-0'}`}>
-            <div name="gen lang content" className='w-full h-full flex flex-col 
-             justify-evenly overflow-hidden'>
-              <div name="java" className='flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <FaJava className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Experienced with <strong className='text-tertiary'>Java</strong>, I have a solid foundation in 
-                object-oriented programming from university studies, with practical experience 
-                in developing efficient, scalable software solutions.
-                </p>
-              </div>
-              <div name="python" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <FaPython className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                <strong className='text-tertiary'>Python</strong>, my go-to for personal projects, I’ve used in API 
-                integration, data manipulation, UI development, and algorithmic problem-solving.  
-                </p>
-              </div>
-              <div name="haskell" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <DiHaskell className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Introduced to <strong className='text-tertiary'>Haskell</strong> in a functional programming class during 
-                my junior year, I developed a deeper understanding of recursion and 
-                functional paradigms.
-                </p>
-              </div>
-              <div name="c/c++" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <SiCplusplus className='mr-2 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                <strong className='text-tertiary'>C++</strong> layed the groundwork for understanding programming 
-                fundamentals, while <strong className='text-tertiary'>C</strong> deepened my insights into system-level 
-                concepts and assembly code conversion. 
-                </p>
-              </div>
-            </div>
           </div>
-
-          <div name="Web Dev" className={`absolute h-full duration-500 
-          ${pageIndex === 1 ? 'opacity-100' : 'opacity-0'}`}>
-            <div name="web dev content" className='w-full h-full flex flex-col justify-evenly'>
-              <div name="react" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <FaReact className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                <strong className='text-tertiary'>React</strong>, my most experienced front-end library, was extensively 
-                covered in a 400-level user interfaces class and is the foundation of this 
-                website's development.  
-                </p>
-              </div>
-
-              <div name="tailwind" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <SiTailwindcss className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                <strong className='text-tertiary'>Tailwind</strong>, the CSS framework I'm most versed in, was instrumental 
-                in building this website and significantly enhanced my CSS skills.
-                </p>
-              </div>
-
-              <div name="express/node" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <FaNode className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Experienced in backend development with <strong className='text-tertiary'>Node </strong>and <strong 
-                className='text-tertiary'>Express</strong>, I've crafted servers and APIs, integrating
-                them seamlessly with databases for full-stack functionality.
-                </p>
-              </div>
-
-              <div name="sql/mongo" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <DiMongodb className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Equally confortable with <strong className='text-tertiary'>MongoDB</strong> and < strong className='text-tertiary'>SQL</strong>, 
-                I've utilized these databases across various classes and projects,
-                demonstrating versatility and adaptability in data management.
-                </p>
-              </div>
-            </div>
+          {/** Tailwind */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <SiTailwindcss  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#3BB2AF]'/>
+            <p className='w-[70%] pr-4'>
+            <strong className='text-[#3BB2AF]'>Tailwind</strong>, the CSS framework I'm most versed in
+            significantly enhanced my CSS skills, and make sytling webpages seemless and easy.
+            </p>
           </div>
-
-          <div name="Dev ops" className={`absolute h-full duration-500 
-          ${pageIndex === 2 ? 'opacity-100' : 'opacity-0'} `}>
-            <div name="dev ops content" className='w-full h-full flex flex-col justify-evenly'>
-              <div name="git" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <FaGithub className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Exclusively using <strong className='text-tertiary'>Git</strong> for version control over the past 5 
-                years, I've mastered its functionalities, making it indispensable for
-                managing my project code with proficiency. 
-                </p>
-              </div>
-              <div name="docker" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <FaDocker className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Proficient with <strong className='text-tertiary'>Docker</strong>, I grasp the fundamentals of 
-                containerization, streamlining the deployment process of applications
-                for future scalability and efficiency.
-                </p>
-              </div>
-              <div name="kubernetes" className='w-[100%] flex items-center
-              justify-left md:pl-[10vw] pl-[2%]'>
-                <SiKubernetes className='mr-4 text-skill-icon text-secondary'/>
-                <p className='max-w-[70%]'>
-                Familiar with <strong className='text-tertiary'>Kubernetes</strong>, I've learned the essentials 
-                of orchestrating and deploying pods within clusters during a cloud
-                computing class.
-                </p>
-              </div>
-            </div>
+          {/** Node */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <FaNode  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#8FC53F]'/>
+            <p className='w-[70%] p-2'>
+              <strong className='text-[#8FC53F]'>Node js</strong> is what I have experience
+              with for backend development. I've implemented servers, API's and database
+              connections with this library.
+            </p>
+          </div>
+          {/** MongoDB */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <DiMongodb  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#429E39]'/>
+            <p className='w-[70%] p-2'>
+              <strong className='text-[#429E39]'>MongoDB</strong> is the database managment
+              system I've become most familiar with, and it's what I use if I need a database
+              for my projects. I've also used SQL within my database classes.
+            </p>
           </div>
         </div>
 
-        <div name='footer' className='w-full h-[16vh] mt-auto 
-        flex flex-col'>
-          <ScrollLink to="contact" spy={true} smooth={true} duration={500} 
-          className='group text-button flex items-center self-start border-[1px] border-gray-900 
-          cursor-pointer ml-[2%] md:ml-[10%] mt-2 text-gray-900 hover:bg-gray-900 
-          hover:text-gray-300 pr-1 mb-8 overflow-hidden rounded-sm'>
-            <h4 className='px-2'>
-              View Contact Page
-            </h4>
-            <GiUfo size={30} className='transition-transform group-hover:translate-y-[16px]
-            duration-700'/>
-          </ScrollLink>
+        {/** devops */}
+        <div className={`w-full h-full  absolute duration-500 ease-in-out
+        grid grid-cols-1 grid-rows-3 p-4 gap-4 
+        ${pageIndex === 2 ? `opacity-100`: `opacity-0`}`}>
+          {/** Git */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <FaGithub  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#03D8FF]'/>
+            <p className='w-[70%] pr-4'>
+            Exclusively using <strong className='text-tertiary'>Git</strong> for version control over the past 5 
+            years, I've mastered its functionalities, making it indispensable for
+            managing my project code with proficiency.          
+            </p>
+          </div>
+          {/** Docker */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <FaDocker  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#1D63ED]'/>
+            <p className='w-[70%] p-2'>
+              With the use of <strong className='text-[#1D63ED]'>Docker</strong>, I grasp 
+              the fundamentals of containerization. 
+            </p>
+          </div>
+          {/** Kubernetes */}
+          <div className=' rounded-md border-secondary border-[1px]
+          flex items-center shadow-basedSmall'>
+            <SiKubernetes  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#2F6CE5]'/>
+            <p className='w-[70%] p-2'>
+              I understand how <strong className='text-[#2F6CE5]'>Kubernetes</strong> deploys 
+              and orchestrates pods, which contain Docker containers.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+
+
+    </section>
   )
 }
 

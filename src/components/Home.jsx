@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from "react-scroll"
 import { GoArrowRight } from "react-icons/go";
 import Navbar from './navbar'
-import Break from './Break'
 
 const Home = () => {
   const homeBlurb = `Welcome to my portfolio! I'm on the verge of graduating from West Chester 
