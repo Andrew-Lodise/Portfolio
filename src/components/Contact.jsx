@@ -5,11 +5,12 @@ import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import resume from '../assets/Resume_v2.pdf'
 
 const Contact = () => {
 
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/17L4yR1k02iBPW0PKED1RNpNsrXsssUSL/view?usp=sharing','_blank');
+    window.open(resume,'_blank');
   };
   const openGithub = () => {
     window.open('https://github.com/Andrew-Lodise','_blank');

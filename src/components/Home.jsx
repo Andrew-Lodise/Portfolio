@@ -13,15 +13,16 @@ const Home = () => {
   truly captivated me.`
 
   return (
-    <div name='home' className='w-full h-screen bg-primary text-quaternary flex flex-col'>
+    <div name='home' className='w-full h-screen bg-primary text-quaternary flex flex-col items-center
+    border-b-[1px] border-tertiary'>
       <Navbar />
 
-      <div className='h-full w-[80%] ml-[10%]  flex flex-col justify-center flex-grow'>
+      <div className='h-full w-[80%]  flex flex-col justify-center'>
         <h1 className='text-[48px]/[54px] lg:text-[72px]/[72px] font-bold'>
           Andrew Lodise
         </h1>
 
-        <h3 className='text-[26px]/[36px] lg:text-[46px]/[46px] font-semibold pb-4 lg:pb-8'>
+        <h3 className='text-[26px]/[36px] lg:text-[36px]/[46px] font-semibold pb-4 lg:pb-8'>
           Front-end Software Developer
         </h3>
 
@@ -31,7 +32,7 @@ const Home = () => {
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
         className='group flex items-center self-start text-[16px] md:text-[24px]
-        cursor-pointer mt-2 p-8 bg-primary hover:bg-tertiary text-gray-300 duration-300
+        cursor-pointer mt-2 p-8 bg-primary hover:bg-tertiary text-secondary duration-300
         hover:text-black border-white border-[1px] shadow-basedSmall rounded-md
         hover:shadow-basedHover hover:border-tertiary ease-in-out'>
           <h4 className='px-2 font-medium'>
@@ -41,7 +42,6 @@ const Home = () => {
           duration-300'/>
         </Link>
       </div>
-      <Break />
       
       
     </div>

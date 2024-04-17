@@ -4,13 +4,14 @@ import { Link } from "react-scroll"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import resume from '../assets/Resume_v2.pdf'
 
 const Navbar = () => {
   const [miniMenu, setMiniMenu] = useState(false);
   const handleBarClick = () => setMiniMenu(!miniMenu);
 
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/17L4yR1k02iBPW0PKED1RNpNsrXsssUSL/view?usp=sharing','_blank');
+    window.open(resume,'_blank');
   };
   const openGithub = () => {
     window.open('https://github.com/Andrew-Lodise','_blank');
@@ -85,15 +86,14 @@ const Navbar = () => {
           
         {/* bar toggle button for small screens*/}
         <div className='md:hidden cursor-pointer rounded-sm
-        z-10 mr-4 hover:bg-gray-900 hover:text-tertiary duration-300
+        z-10 mr-4 hover:text-tertiary duration-300
         max-h-[100%] p-1 text-xl'
         onClick={handleBarClick}>
           <div className={!miniMenu ? 'flex items-center gap-2' : 'hidden'}>
             <h1>Menu</h1>
           </div>
 
-          <div className={miniMenu ? `flex 
-           hover:text-tertiary rounded p-1` : 'hidden'}>
+          <div className={miniMenu ? `flex hover:text-tertiary rounded p-1` : 'hidden'}>
             <RxCross1 />
           </div>
           

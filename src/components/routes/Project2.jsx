@@ -38,8 +38,9 @@ export default function Project2() {
           <button onClick={() => openGithubLink(project.codeLink)}
           className='w-full max-w-[600px] border-[1px] border-secodnary text-2xl font-medium
           rounded-md py-4 shadow-basedSmall hover:text-tertiary hover:border-tertiary
-          hover:shadow-basedHover duration-300 ease-in-out'>
+          hover:shadow-basedHover duration-300 ease-in-out flex items-center justify-center'>
             Github Repository
+            <FaGithub className='ml-2'/>
           </button>
         </div>
         
