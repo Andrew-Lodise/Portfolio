@@ -19,11 +19,11 @@ export default function Project2() {
   const project = ProjectList[id]
   
   return (
-    <section className='w-full bg-primary text-secondary'>
+    <section className='w-full bg-primary text-secondary flex flex-col items-center'>
       <header className='w-full flex items-center font-semibold justify-center py-4
        h-[10vh]'>
         <Link to='/Portfolio' className='absolute left-2 hover:text-tertiary
-        rounded-sm duration-200 px-2 text-3xl flex items-center'>
+        ease-in-out duration-300 px-2 text-3xl flex items-center'>
           <FaArrowLeft className='mr-1'/>
           <span className='hidden lg:block'>
             Homepage
@@ -33,65 +33,75 @@ export default function Project2() {
           {project.title}
         </h1>
       </header>
-      <div className='w-full h-auto  flex flex-col items-center'>
-        <div className='w-full px-4 m-4 flex justify-center'>
+      {/** video */}
+      <div name='video-content' className='flex w-full flex-col items-center justify-center px-2'>
+        <h1 className='text-2xl font-semibold'>
+          Video Demo
+        </h1>
+        <iframe src={project.embedLink} title={`${project.name} Demo`} frameBorder="0"
+        allow="autoplay; clipboard-write" allowFullScreen
+        className='w-full border-[1px] border-secondary rounded-md aspect-video
+        shadow-basedSmall max-w-[1200px]'>
+        </iframe>
+      </div>
+      <div className='w-full h-auto flex flex-col items-center'>
+        {/** purpose */}
+        <div className='w-full flex flex-col max-w-[1000px] mt-8 px-4'>
+          <p className='w-full text-2xl text-center'>
+            {project.purpose}
+          </p>
+        </div>
+        {/** github button */}
+        <div className='w-full px-4 mt-8 flex justify-center'>
           <button onClick={() => openGithubLink(project.codeLink)}
-          className='w-full max-w-[600px] border-[1px] border-secodnary text-2xl font-medium
-          rounded-md py-4 shadow-basedSmall hover:text-tertiary hover:border-tertiary
+          className='w-full max-w-[600px] border-[1px] border-tertiary text-2xl font-medium
+          rounded-md py-4 shadow-basedSmallt  bg-tertiary text-black
           hover:shadow-basedHover duration-300 ease-in-out flex items-center justify-center'>
             Github Repository
             <FaGithub className='ml-2'/>
           </button>
         </div>
-        
-        <div className=' grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full p-4 gap-4'>
+        {/** technology used */}
+        <div className='w-full flex flex-col px-4 items-center mt-8'>
+          <h2 className='w-full text-2xl font-bold text-center'>
+            Technologies Used 
+          </h2>
+          <ul className={`w-full text-xl max-w-[800px] grid gap-4 
+          grid-cols-1 grid-flow-row sm:grid-cols-2 p-4`}>
+            {project.tech.map(skill => (
+              <li key={skill} className='w-full text-center border-[1px] border-tertiary
+              rounded-md py-2'>
+                {skill}
+              </li>
+            ))}  
+          </ul>
+        </div>
+        {/** pictures, maybe carosel in the future? */}
+        <div className=' grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full px-4 gap-4 mt-8'>
+
           <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
           border-secondary rounded-md shadow-basedSmall'/>
           <img src={project.images[1]} alt="" className=' h-full object-cover hidden lg:block border-[1px] 
           border-secondary rounded-md shadow-basedSmall'/>
         </div>
-        <div className='w-full flex flex-col gap-6 items-center'>
-          <div className='w-full flex flex-col px-4 max-w-[750px]'>
-            <h2 className='w-full text-2xl font-bold text-center '>
-              Purpose 
-            </h2>
-            <p className='w-full text-lg'>
-              {project.purpose}
-            </p>
-          </div>
-          <div className='w-full flex flex-col px-4 items-center'>
-            <h2 className='w-full text-2xl font-bold text-center'>
-              Technology
-            </h2>
-            <ul className={`w-full text-lg grid grid-rows-${Math.ceil(project.tech.length / 2)} 
-            grid-cols-2 max-w-[600px]`}>
-              {project.tech.map(skill => (
-                <li key={skill} className='w-full text-center'>
-                  {skill} 
-                </li>
-              ))}  
-            </ul>
-          </div>
-          <div className='w-full flex flex-col px-4 max-w-[750px]'>
-            <h2 className='w-full text-2xl font-bold'>
-              About 
-            </h2>
-            <p className='w-full text-lg'>
-              {project.description}
-            </p>
-          </div>
+        {/** about section */}
+        <div className='w-full flex flex-col px-4 max-w-[1200px] mt-8'>
+          <h2 className='w-full text-2xl font-bold'>
+            Extra Details 
+          </h2>
+          <p className='w-full text-lg'>
+            {project.description}
+          </p>
         </div>
-
-        <div name='video-content' className='flex w-full flex-col items-center justify-center py-8 px-2'>
-          <h1 className='text-2xl font-semibold'>
-            Video Demo
-          </h1>
-          <iframe src={project.embedLink} title={`${project.name} Demo`} frameBorder="0"
-          allow="autoplay; clipboard-write" allowFullScreen
-          className='w-full border-[1px] border-secondary rounded-md aspect-video
-          shadow-basedSmall max-w-[1000px]'>
-          </iframe>
+        {/** back to home button */}
+        <div className=' w-full h-[100px] items-center justify-start pt-8 max-w-[1200px]'>
+          <Link to='/Portfolio' className='w-fit text-2xl border-[1px] border-tertiary bg-tertiary text-black
+          font-semibold  rounded-md shadow-basedSmallt hover:shadow-basedHover
+          duration-300 ease-in-out p-4 mx-4'>
+            back to projects
+          </Link>
         </div>
+        
       </div>
     </section>
   )

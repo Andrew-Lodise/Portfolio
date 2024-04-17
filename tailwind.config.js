@@ -45,6 +45,7 @@ module.exports = {
       boxShadow: {
         based: '0 0 20px rgba(255, 255, 255, .9)',
         basedSmall: '0 0 10px rgba(255, 255, 255, .9)',
+        basedSmallt: '0 0 10px rgba(238,157,146, .9)',
         basedHover: '0 0 30px rgba(238,157,146, .9)'
       }
     },

@@ -32,10 +32,10 @@ const Home = () => {
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
         className='group flex items-center self-start text-[16px] md:text-[24px]
-        cursor-pointer mt-2 p-8 bg-primary hover:bg-tertiary text-secondary duration-300
-        hover:text-black border-white border-[1px] shadow-basedSmall rounded-md
-        hover:shadow-basedHover hover:border-tertiary ease-in-out'>
-          <h4 className='px-2 font-medium'>
+        cursor-pointer mt-2 p-8 bg-tertiary text-[#0f0f32]  border-tertiary
+        duration-300 border-[1px] shadow-basedSmallt rounded-md
+        hover:shadow-basedHover  ease-in-out'>
+          <h4 className='px-2 font-semibold'>
             View projects
           </h4>
           <GoArrowRight className='transition-transform group-hover:rotate-90 

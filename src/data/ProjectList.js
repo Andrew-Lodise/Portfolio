@@ -17,8 +17,7 @@ const ProjectList = [
     redirect that stocks subpage. When it lands on the subpage it will see two graphs showing the stocks
     short term data and long terma data, and some analytics corresponding to that data.`,
     shortDescription: `React app connected to stock API displaying stock data`,
-    purpose: `This app was created to be able to quicky observe and learn about popular stocks and
-    their patters`,
+    purpose: `This app was made to quickly view and analyze popular stocks`,
     codeLink: 'https://github.com/Andrew-Lodise/vite-stock-app.git',
     embedLink: 'https://www.youtube.com/embed/XGFNThva8xc',
   },
