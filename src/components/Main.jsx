@@ -1,9 +1,8 @@
 import React from 'react'
 import Home from './Home'
-import Skills from './Skills'
-import Contact from './Contact'
 import Projects3 from './Projects3'
 import Skills2 from './Skills2'
+import Contact2 from './Contact2'
 
 
 export default function Main() {
@@ -12,8 +11,7 @@ export default function Main() {
       <Home />
       <Projects3 />
       <Skills2 />
-      <Skills />
-      <Contact />
+      <Contact2 />
     </>
     
   )
