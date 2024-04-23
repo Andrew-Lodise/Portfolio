@@ -104,7 +104,7 @@ const Skills = () => {
           {/** Node */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <FaNode  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#8FC53F]'/>
+            <FaNode  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#8FC53F]'/>
             <p className='w-[70%] p-2'>
               Implemented servers, API's and database
               connections with <strong className='text-[#8FC53F]'>Node js</strong>

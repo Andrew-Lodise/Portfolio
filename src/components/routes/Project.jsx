@@ -76,8 +76,8 @@ export default function Project() {
             ))}  
           </ul>
         </div>
-        {/** pictures, maybe carosel in the future? */}
-        <div className=' grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full px-4 gap-4 mt-8'>
+        {/** picture(s), maybe carosel in the future? */}
+        <div className='hidden md:grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full px-4 gap-4 mt-8'>
 
           <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
           border-secondary rounded-md shadow-basedSmall'/>
