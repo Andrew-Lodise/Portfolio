@@ -27,7 +27,7 @@ const Contact = () => {
           <h3 className='w-full max-w-[600px] font-medium mb-1'>
             Connect through socials
           </h3>
-          <ul className=' grid grid-rows-3 grid-cols-1 gap-4 flex-grow
+          <ul className=' grid grid-rows-3 grid-cols-1 gap-16 p-8 flex-grow
           w-full max-w-[600px] '>
             <li className=''>
             <button className='flex items-center border-[1px] border-secondary 
@@ -65,7 +65,7 @@ const Contact = () => {
           </h3>
 
           <form action="https://getform.io/f/eapwdyxb" method='POST' 
-          className='size-full grid grid-rows-6 grid-cols-1  gap-2 text-2xl'>
+          className='size-full grid grid-rows-6 grid-cols-1 gap-6 text-2xl p-4'>
             <input type="text" placeholder='Name' name="name" 
             className='bg-primary border-[1px] border-secondary px-2 rounded-md
              shadow-basedSmall'/>
