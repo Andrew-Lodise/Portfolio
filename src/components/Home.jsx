@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-scroll"
 import { GoArrowRight } from "react-icons/go";
 import Navbar from './navbar'
-import profilePic from '../assets/pic-for-website-circle.jpg'
+//import profilePic from '../assets/pic-for-website-circle.jpg'
 
 const Home = () => {
   const homeBlurb = `Welcome to my portfolio! I'm on the verge of graduating from West Chester 
@@ -16,8 +16,8 @@ const Home = () => {
       <Navbar />
 
       <div className='h-full w-[80%]  flex flex-col items-center pt-[6vh]'>
-        <img src={profilePic} alt="" 
-        className='h-[30vh] rounded-full'/>
+        {/*<img src={profilePic} alt="" 
+        className='h-[30vh] rounded-full'/>*/}
         <h1 className='text-[36px]/[48px] xl:text-[72px]/[72px] font-bold text-center'>
           Andrew Lodise
         </h1>
