@@ -55,8 +55,8 @@ export default function Project() {
         <div className='w-full px-4 mt-8 flex justify-center'>
           <button onClick={() => openGithubLink(project.codeLink)}
           className='w-full max-w-[600px] border-[1px] border-tertiary text-2xl font-medium
-          rounded-md py-4 shadow-basedSmallt  bg-tertiary text-black
-          hover:shadow-basedHover duration-300 ease-in-out flex items-center justify-center'>
+          rounded-md py-4  bg-tertiary text-black
+           flex items-center justify-center'>
             Github Repository
             <FaGithub className='ml-2'/>
           </button>
@@ -64,7 +64,7 @@ export default function Project() {
         {/** technology used */}
         <div className='w-full flex flex-col px-4 items-center mt-8'>
           <h2 className='w-full text-2xl font-bold text-center'>
-            Technologies Used 
+            Technologies 
           </h2>
           <ul className={`w-full text-xl max-w-[800px] grid gap-4 
           grid-cols-1 grid-flow-row sm:grid-cols-2 p-4`}>
@@ -96,8 +96,7 @@ export default function Project() {
         {/** back to home button */}
         <div className=' w-full h-[100px] items-center justify-start pt-8 max-w-[1200px]'>
           <Link to='/Portfolio' className='w-fit text-2xl border-[1px] border-tertiary bg-tertiary text-black
-          font-semibold  rounded-md shadow-basedSmallt hover:shadow-basedHover
-          duration-300 ease-in-out p-4 mx-4'>
+          font-semibold  rounded-md p-4 mx-4'>
             back to projects
           </Link>
         </div>

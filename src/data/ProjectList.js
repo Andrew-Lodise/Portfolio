@@ -12,7 +12,7 @@ const ProjectList = [
     name: `Stock Lookup`,
     id: 0,
     images: [stockLookup1, stockLookup2],
-    tech: ['React', 'Tailwind', 'Javascript', 'AlphaVantage API'],
+    tech: ['React', 'Tailwind', 'Javascript', 'REST API'],
     description: `This app lists a few of the most well known stocks. The user then can choose a stock and
     redirect that stocks subpage. When it lands on the subpage it will see two graphs showing the stocks
     short term data and long terma data, and some analytics corresponding to that data.`,
@@ -26,7 +26,7 @@ const ProjectList = [
     name: `WhatToWear`,
     id: 1,
     images: [wtw1, wtw2],
-    tech: ['Python', 'Tkinter', 'REST api', 'Pandas'],
+    tech: ['Python', 'Tkinter', 'REST API', 'Pandas'],
     description: `This app delivers personalized outfit recommendations based on local weather 
     conditions. Users input their city, and through the Open Weather Map API or web scraping, 
     the app retrieves weather data. It then aligns this information with user-defined outfit 

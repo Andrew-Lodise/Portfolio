@@ -85,9 +85,9 @@ const Navbar = () => {
         
           
         {/* bar toggle button for small screens*/}
-        <div className='md:hidden cursor-pointer rounded-sm
-        z-10 mr-4 hover:text-tertiary duration-300
-        max-h-[100%] p-1 text-xl'
+        <div className='md:hidden cursor-pointer rounded-md
+        z-10 mr-4 hover:text-tertiary duration-300 
+        max-h-[100%] p-1 text-xl  '
         onClick={handleBarClick}>
           <div className={!miniMenu ? 'flex items-center gap-2' : 'hidden'}>
             <h1>Menu</h1>

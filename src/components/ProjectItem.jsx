@@ -1,19 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProjectList from '../data/ProjectList'
 
 const ProjectItem = (props) => {
+
+  const project = ProjectList[props.projectId]
+
   return (
     <Link to={`/Portfolio/projects/${props.projectId}`} 
-    className='size-full border-secondary hover:border-tertiary border-[1px] shadow-basedSmall hover:scale-[102%]
-    duration-200 ease-in-out rounded-md hover:shadow-basedHover flex items-center justify-center
-    text-2xl sm:text-3xl font-medium hover:text-tertiary'>
+    className='size-full  hover:scale-[102%] text-center relative
+    duration-300 ease-in-out rounded-md flex flex-col items-center justify-center
+    text-2xl sm:text-3xl font-medium  bg-tertiary text-primary'>
       <p>
-        {props.title}
+        {project.title}{}
       </p>
-       
+      <div className={`absolute bottom-2 sm:grid grid-rows-1 grid-cols-${project.tech.length} 
+      text-sm w-full gap-2 px-2 hidden `}>
+        {project.tech.map(item => (
+          <p key={item} className='border-black border-[1px] rounded-md'>
+            {item}
+          </p>
+        ))}
+      </div>
     </Link>
-    
-    
   )
 }
 

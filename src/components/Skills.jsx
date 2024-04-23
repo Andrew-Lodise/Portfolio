@@ -11,6 +11,10 @@ const Skills = () => {
   return (
     <section name='skills' className='w-full h-screen bg-primary text-secondary 
     border-b-[1px] border-tertiary flex flex-col items-center'>
+      <h3 className='mt-2 w-full max-w-[1000px] text-[16px]/[24px] lg:text-[24px]/[30px]
+      text-center'>
+        Skills I've acuired along the way
+      </h3>
       {/** navigation */}
       <ul name='nav' className='w-full h-[10vh] grid grid-rows-1 grid-cols-3 gap-2 text-2xl p-2
       max-w-[1000px] mt-2 font-medium'>
@@ -43,60 +47,58 @@ const Skills = () => {
       <div className='w-full max-w-[1200px] h-[90vh] relative transition-opacity lg:text-xl'>
         {/** general */}
         <div className={`w-full h-full  absolute duration-500 ease-in-out
-        grid grid-cols-1 grid-rows-3 p-4 gap-4 
+        grid grid-cols-1 grid-rows-3 p-8 md:p-16 gap-16 
         ${pageIndex === 0 ? `opacity-100`: `opacity-0`}`}>
           {/** Java */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <FaJava  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#EB2025]'/>
+            <FaJava  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#EB2025]'/>
             <p className='w-[70%] pr-4'>
-            Most experienced with <strong className='text-[#EB2025]'>Java</strong>, 
-            I have a strong foundation in object-oriented programming from university studies
-            using this langugage.
+            Strong foundation in object-oriented programming
+            using <strong className='text-[#EB2025]'>Java</strong>
             
             </p>
           </div>
           {/** JavaScript */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <IoLogoJavascript  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#F0DB4F]'/>
+            <IoLogoJavascript  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#F0DB4F]'/>
             <p className='w-[70%] p-2'>
-              Currently studying <strong className='text-[#F0DB4F]'>JavaScript</strong> to aid my front-end
-              development journey. This language is used for all of the react projects shown on this website.
+              Studying <strong className='text-[#F0DB4F]'>JavaScript</strong> to aid my front-end
+              web development journey 
             </p>
           </div>
           {/** JavaScript */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <FaPython  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#3872A1]'/>
+            <FaPython  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#3872A1]'/>
             <p className='w-[70%] p-2'>
-              <strong className='text-[#3872A1]'>Python</strong> is a langugage I've used for personal projects,
-              image processing, and solving leetcode problems.
+              Used <strong className='text-[#3872A1]'>Python</strong> for personal projects,
+              image processing, and solving leetcode problems
             </p>
           </div>
         </div>
 
         {/** web */}
         <div className={`w-full h-full  absolute duration-500 ease-in-out
-        grid grid-cols-1 grid-rows-4 p-4 gap-4 
+        grid grid-cols-1 grid-rows-4 p-8 md:p-16 gap-16
         ${pageIndex === 1 ? `opacity-100`: `opacity-0`}`}>
           {/** React */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <FaReact  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#03D8FF]'/>
+            <FaReact  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#03D8FF]'/>
             <p className='w-[70%] pr-4'>
-            <strong className='text-[#03D8FF]'>React</strong> is currently my main focus. 
-            This front end library was first introduced to me during a User Interface class,
-            and I continue to use it for my front end projects.          
+            Focusing heavily on <strong className='text-[#03D8FF]'>React</strong> to 
+            develope front-end user interfaces and single-page applications        
+            
             </p>
           </div>
           {/** Tailwind */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <SiTailwindcss  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#3BB2AF]'/>
+            <SiTailwindcss  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#3BB2AF]'/>
             <p className='w-[70%] pr-4'>
-            <strong className='text-[#3BB2AF]'>Tailwind</strong>, the CSS framework I'm most versed in
-            significantly enhanced my CSS skills, and make sytling webpages seemless and easy.
+            Implementing CSS fast and efficiently with <strong className='text-[#3BB2AF]'>Tailwind</strong>
             </p>
           </div>
           {/** Node */}
@@ -104,53 +106,50 @@ const Skills = () => {
           flex items-center shadow-basedSmall'>
             <FaNode  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#8FC53F]'/>
             <p className='w-[70%] p-2'>
-              <strong className='text-[#8FC53F]'>Node js</strong> is what I have experience
-              with for backend development. I've implemented servers, API's and database
-              connections with this library.
+              Implemented servers, API's and database
+              connections with <strong className='text-[#8FC53F]'>Node js</strong>
             </p>
           </div>
           {/** MongoDB */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <DiMongodb  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#429E39]'/>
+            <DiMongodb  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#429E39]'/>
             <p className='w-[70%] p-2'>
-              <strong className='text-[#429E39]'>MongoDB</strong> is the database managment
-              system I've become most familiar with, and it's what I use if I need a database
-              for my projects. I've also used SQL within my database classes.
+              <strong className='text-[#429E39]'>MongoDB</strong> is
+               what I use if I need a database for my projects
             </p>
           </div>
         </div>
 
         {/** devops */}
         <div className={`w-full h-full  absolute duration-500 ease-in-out
-        grid grid-cols-1 grid-rows-3 p-4 gap-4 
+        grid grid-cols-1 grid-rows-3 p-8 md:p-16 gap-16
         ${pageIndex === 2 ? `opacity-100`: `opacity-0`}`}>
           {/** Git */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <FaGithub  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#03D8FF]'/>
+            <FaGithub  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#03D8FF]'/>
             <p className='w-[70%] pr-4'>
-            Exclusively using <strong className='text-tertiary'>Git</strong> for version control over the past 5 
-            years, I've mastered its functionalities, making it indispensable for
-            managing my project code with proficiency.          
+            Using <strong className='text-tertiary'>Git</strong> for version control over the past 5 
+            years, I've mastered its functionalities       
             </p>
           </div>
           {/** Docker */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <FaDocker  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#1D63ED]'/>
+            <FaDocker  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#1D63ED]'/>
             <p className='w-[70%] p-2'>
-              With the use of <strong className='text-[#1D63ED]'>Docker</strong>, I grasp 
-              the fundamentals of containerization. 
+              With <strong className='text-[#1D63ED]'>Docker</strong>, I understand 
+              the fundamentals of containerization
             </p>
           </div>
           {/** Kubernetes */}
           <div className=' rounded-md border-secondary border-[1px]
           flex items-center shadow-basedSmall'>
-            <SiKubernetes  className='w-[30%] h-[90%] max-h-[200px] p-4 text-[#2F6CE5]'/>
+            <SiKubernetes  className='w-[30%] h-[90%] max-h-[130px] p-4 text-[#2F6CE5]'/>
             <p className='w-[70%] p-2'>
-              I understand how <strong className='text-[#2F6CE5]'>Kubernetes</strong> deploys 
-              and orchestrates pods, which contain Docker containers.
+              Familiar with how <strong className='text-[#2F6CE5]'>Kubernetes</strong> deploys 
+              and orchestrates pods
             </p>
           </div>
         </div>
