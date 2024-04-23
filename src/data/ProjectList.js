@@ -43,7 +43,7 @@ const ProjectList = [
     name: `Portfolio`,
     id: 2,
     images: [homepage, skillspage],
-    tech: ['React', 'Tailwind','Javascript'],
+    tech: ['React', 'Tailwind','Javascript', 'React Router'],
     description: `This is a React application that uses react components to showcase my projects to future
     employers and/or people that come across it. The homepage text is made using custom css size styling for
     the font in order for the page to be responsive to any zoom/resize of the screen width and heigh. The

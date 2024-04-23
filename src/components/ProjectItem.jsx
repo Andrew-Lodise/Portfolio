@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ProjectList from '../data/ProjectList'
 
 const ProjectItem = (props) => {
 
-  const project = ProjectList[props.projectId]
-  const techLength = project.tech.length;
+  useEffect(() => {
+    
+  }, []);
+
+  let project = ProjectList[props.projectId]
 
   return (
     <Link to={`/Portfolio/projects/${props.projectId}`} 
@@ -15,7 +18,7 @@ const ProjectItem = (props) => {
       <p>
         {project.title}{}
       </p>
-      <div className={`absolute bottom-2 sm:grid grid-rows-1 grid-cols-${techLength} text-sm w-full gap-2 px-2 hidden`}>
+      <div className={`absolute bottom-2 sm:grid grid-rows-1 grid-cols-4 text-sm w-full gap-2 px-2 hidden`}>
         {project.tech.map(item => (
           <p key={item} className='border-black border-[1px] rounded-md'>
             {item}
