@@ -1,8 +1,8 @@
-import wtw1 from "../assets/wtw1.JPG"
+import wtw1 from "../assets/wtw169.jpg"
 import wtw2 from "../assets/wtw2.JPG"
-import homepage from "../assets/homepage.JPG"
+import homepage from "../assets/homepage169.jpg"
 import skillspage from "../assets/skillspage.JPG"
-import stockLookup1 from '../assets/StockLoopup1.JPG'
+import stockLookup1 from '../assets/StockLoopup169.jpg'
 import stockLookup2 from '../assets/StockLoopup2.JPG'
 
 

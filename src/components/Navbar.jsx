@@ -21,18 +21,25 @@ const Navbar = () => {
   };
 
   return (
-    <header className='relative z-50 w-full bg-primary text-quaterany'>
+    <header className='self-start z-50 w-full bg-primary text-secondary fixed opacity-[95%]'>
       {/** navbar */}
-      <div className="w-full pt-4 flex items-center justify-end  text-base font-semibold">
+      <div className="w-full p-2 flex justify-end text-base font-semibold">
         {/** menu buttons and external links */}
-        <div className='w-full hidden md:flex text-2xl'>
+        <div className='w-full hidden md:flex text-2xl justify-center'>
           {/* menu/main buttons (home/projects/skills/contact) */}
-          <ul className='flex flex-grow justify-center gap-x-8'>
+          <ul className='flex justify-between w-[50%] max-w-[800px] min-w-[500px]'>
             <li>
               <Link to="home" spy={true} smooth={true} duration={500}
               className='cursor-pointer hover:text-tertiary  duration-300
               min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link to="about" spy={true} smooth={true} duration={500}
+              className='cursor-pointer hover:text-tertiary  duration-300
+              min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
+                About
               </Link>
             </li>
             <li>
@@ -83,11 +90,10 @@ const Navbar = () => {
           </ul>
         </div>
         
-          
         {/* bar toggle button for small screens*/}
         <div className='md:hidden cursor-pointer rounded-md
         z-10 mr-4 hover:text-tertiary duration-300 
-        max-h-[100%] p-1 text-xl  '
+        max-h-[100%] p-1 text-xl '
         onClick={handleBarClick}>
           <div className={!miniMenu ? 'flex items-center gap-2' : 'hidden'}>
             <h1>Menu</h1>
@@ -107,6 +113,12 @@ const Navbar = () => {
             className='cursor-pointer text-center hover:text-tertiary 
             duration-300 ease-in-out rounded-sm px-2'>
               Home
+            </Link>
+            <Link to="about" spy={true} smooth={true} duration={500}
+            onClick={handleBarClick} 
+            className='cursor-pointer text-center hover:text-tertiary 
+            duration-300 ease-in-out rounded-sm px-2'>
+              About
             </Link>
             <Link to="projects" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 

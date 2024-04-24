@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from "react-scroll"
 import { GoArrowRight } from "react-icons/go";
-import Navbar from './navbar'
 import headshot from '../assets/circle-headshot.jpg'
 
 const Home = () => {
@@ -11,11 +10,10 @@ const Home = () => {
   truly captivated me.`
 
   return (
-    <div name='home' className='w-full h-screen bg-primary text-quaternary flex flex-col items-center
-    border-b-[1px] border-tertiary'>
-      <Navbar />
+    <div name='home' className='w-full min-h-screen bg-primary text-quaternary flex flex-col items-center
+    border-b-[1px] border-tertiary justify-center'>
 
-      <div className='h-full w-[80%] max-w-[1000px]  flex flex-col items-center pt-[6vh]'>
+      <div className=' w-[80%] max-w-[1000px]  flex flex-col items-center'>
         <img src={headshot} alt="" 
         className='h-[30vh] rounded-full'/>
         <h1 className='text-[36px]/[48px] xl:text-[72px]/[72px] font-bold text-center'>
