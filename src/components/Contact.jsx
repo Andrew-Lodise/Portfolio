@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../assets/Resume_v2.pdf'
+import resume from '../assets/Andrew-Lodise-Resume.pdf'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { IoIosMail } from 'react-icons/io';

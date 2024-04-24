@@ -29,7 +29,7 @@ export default function Project() {
             Homepage
           </span>
         </Link>
-        <h1 className='cursor-default text-3xl md:text-4xl w-full text-center '>
+        <h1 className='cursor-default text-3xl md:text-4xl w-[75%] text-center '>
           {project.title}
         </h1>
       </header>
@@ -41,7 +41,7 @@ export default function Project() {
         <iframe src={project.embedLink} title={`${project.name} Demo`} frameBorder="0"
         allow="autoplay; clipboard-write" allowFullScreen
         className='w-full border-[1px] border-secondary rounded-md aspect-video
-        shadow-basedSmall max-w-[1200px]'>
+         max-w-[1200px]'>
         </iframe>
       </div>
       <div className='w-full h-auto flex flex-col items-center'>
@@ -77,12 +77,13 @@ export default function Project() {
           </ul>
         </div>
         {/** picture(s), maybe carosel in the future? */}
-        <div className='hidden md:grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full px-4 gap-4 mt-8'>
+        <div className='hidden md:grid grid-rows-1 grid-cols-1 lg:grid-cols-2 w-full px-4 
+        gap-4 mt-8 max-w-[1200px]'>
 
           <img src={project.images[0]} alt="" className=' h-full object-fill border-[1px] 
-          border-secondary rounded-md shadow-basedSmall'/>
+          border-secondary rounded-md'/>
           <img src={project.images[1]} alt="" className=' h-full object-cover hidden lg:block border-[1px] 
-          border-secondary rounded-md shadow-basedSmall'/>
+          border-secondary rounded-md'/>
         </div>
         {/** about section */}
         <div className='w-full flex flex-col px-4 max-w-[1200px] mt-8'>
@@ -94,9 +95,9 @@ export default function Project() {
           </p>
         </div>
         {/** back to home button */}
-        <div className=' w-full h-[100px] items-center justify-start pt-8 max-w-[1200px]'>
+        <div className=' w-full py-8 h-auto items-center justify-start max-w-[1200px] box-border'>
           <Link to='/Portfolio' className='w-fit text-2xl border-[1px] border-tertiary bg-tertiary text-black
-          font-semibold  rounded-md p-4 mx-4'>
+          font-semibold rounded-md p-4 mx-4'>
             back to projects
           </Link>
         </div>

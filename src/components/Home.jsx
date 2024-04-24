@@ -15,7 +15,7 @@ const Home = () => {
     border-b-[1px] border-tertiary'>
       <Navbar />
 
-      <div className='h-full w-[80%]  flex flex-col items-center pt-[6vh]'>
+      <div className='h-full w-[80%] max-w-[1000px]  flex flex-col items-center pt-[6vh]'>
         <img src={headshot} alt="" 
         className='h-[30vh] rounded-full'/>
         <h1 className='text-[36px]/[48px] xl:text-[72px]/[72px] font-bold text-center'>
