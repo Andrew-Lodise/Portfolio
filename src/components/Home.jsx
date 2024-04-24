@@ -27,7 +27,7 @@ const Home = () => {
         </h3>
 
         <p className='text-[14px]/[20px] xl:text-[24px]/[30px] pb-4 lg:pb-8 font-hind font-medium'>
-        {homeBlurb}
+          {homeBlurb}
         </p>
 
         <Link to="projects" spy={true} smooth={true} duration={500} 
