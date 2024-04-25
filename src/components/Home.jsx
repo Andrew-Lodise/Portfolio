@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div name='home' className='w-full min-h-screen bg-primary text-quaternary flex flex-col items-center
-    border-b-[1px] border-tertiary justify-center'>
+     justify-center'>
 
       <div className=' w-[80%] max-w-[1000px]  flex flex-col items-center'>
         <img src={headshot} alt="" 

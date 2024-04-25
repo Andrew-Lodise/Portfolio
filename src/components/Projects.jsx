@@ -4,7 +4,7 @@ import ProjectItem from './ProjectItem'
 
 const Projects = () => {
   return (
-    <div name='projects' className='w-full h-screen bg-primary text-secondary 
+    <section name='projects' className='w-full h-screen bg-primary text-secondary 
     flex flex-col items-center justify-center border-b-[1px] border-tertiary'>
       <h1 className=' w-full max-w-[1200px] text-[16px]/[24px] lg:text-[24px]/[30px]
       pl-16 '>
@@ -18,7 +18,7 @@ const Projects = () => {
         
       </div>
 
-    </div>
+    </section>
   )
 }
 
