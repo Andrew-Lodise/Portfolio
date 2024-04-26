@@ -1,8 +1,9 @@
 import React from 'react'
+import headshot from '../assets/circle-headshot.jpg'
 
 const About = () => {
   return (
-    <section name="about" className='bg-primary w-full min-h-screen text-secondary
+    <section name="about" className='bg-primary w-full text-secondary
     flex flex-col md:px-24 px-6 py-24 items-center'>
       <div className='max-w-[1000px]  w-full h-full'>
         <div name='header' className='flex w-full mb-4'>
@@ -15,15 +16,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className='w-full min-h-[600px] grid grid-rows-2 grid-cols-1 
-        lg:grid-rows-1 lg:grid-cols-2 gap-4 '>
-          <div className='box-border border-2 border-white rounded-md'>
-            section a
+        <div className='w-full flex flex-col items-center gap-4'>
+          <div className=' rounded-md
+          flex flex-col items-center '>
+            <img src={headshot} alt="" className='h-[30vh] rounded-full'/>
+            <p className='p-4 text-[18px] font-light max-w-[500px]'>
+              I'm a West Chester graduate looking to persue a career in the information 
+              technology sector. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto dignissimos at maxime cumque quod deserunt sapiente nemo aperiam. Doloribus exercitationem debitis quos quasi corrupti dolores quae eius reiciendis libero.
+            </p>
           </div>
-          <div className='box-border border-2 border-white rounded-md'>
-            section b
-          </div>
-          
         </div>
       </div>
     </section>

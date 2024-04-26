@@ -13,18 +13,16 @@ const Home = () => {
     <div name='home' className='w-full min-h-screen bg-primary text-quaternary flex flex-col items-center
      justify-center'>
 
-      <div className=' w-[80%] max-w-[1000px]  flex flex-col items-center'>
-        <img src={headshot} alt="" 
-        className='h-[30vh] rounded-full'/>
-        <h1 className='text-[36px]/[48px] xl:text-[72px]/[72px] font-bold text-center'>
+      <div className=' w-[80%] max-w-[1000px]  flex flex-col items-start'>
+        <h1 className='text-[56px]/[61.6px] md:text-[96px]/[105.6px] font-black'>
           Andrew Lodise
         </h1>
 
-        <h3 className='text-[20px]/[30px] xl:text-[36px]/[46px] font-semibold pb-4 lg:pb-8 text-center'>
+        <h3 className='text-[36px]/[39.6px] font-bold pb-4 text-tertiary'>
           Software Developer
         </h3>
 
-        <p className='text-[14px]/[20px] xl:text-[24px]/[30px] pb-4 lg:pb-8 font-hind font-medium'>
+        <p className='text-[14px]/[21px] md:text-[18px]/[21.6px] pb-4 lg:pb-8 font-medium'>
           {homeBlurb}
         </p>
 

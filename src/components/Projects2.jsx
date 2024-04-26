@@ -13,7 +13,7 @@ const Projects2 = () => {
             <div className='border-t-[1px] border-secondary opacity-40'></div>
           </div>
           <h1 className='text-[36px] md:text-[56px] font-black mb-4'>
-            Projects<span className='text-tertiary'>.</span>
+            Projects<span className='text-[#272799]'>.</span>
           </h1>
         </div>
 
