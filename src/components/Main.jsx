@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Home'
 import Skills from './Skills'
+import Experience from './Experience'
 import Navbar from './navbar'
 import About from './About'
 import Projects2 from './Projects2'
@@ -14,6 +15,7 @@ export default function Main() {
       <Home />
       <About />
       <Projects2 />
+      <Experience />
       <Contact2 />
     </>
     

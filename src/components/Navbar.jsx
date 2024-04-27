@@ -50,10 +50,10 @@ const Navbar = () => {
               </Link>
             </li> 
             <li>
-              <Link to="skills" spy={true} smooth={true} duration={500} 
+              <Link to="experience" spy={true} smooth={true} duration={500} 
               className='cursor-pointer hover:text-tertiary duration-300
               min-w-fit text-center px-2 py-1 ease-in-out rounded-sm'>
-                Skills
+                Experience
               </Link>
             </li>
             <li>
@@ -126,11 +126,11 @@ const Navbar = () => {
             duration-300 ease-in-out rounded-sm px-2'>
               Projects
             </Link>
-            <Link to="skills" spy={true} smooth={true} duration={500}
+            <Link to="experience" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 
             className='cursor-pointer text-center hover:text-tertiary 
             duration-300 ease-in-out rounded-sm px-2'>
-              Skills
+              Experience
             </Link>
             <Link to="contact" spy={true} smooth={true} duration={500}
             onClick={handleBarClick} 

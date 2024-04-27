@@ -33,7 +33,7 @@ const contact2 = () => {
 
         <div className='w-full max-w-[900px] flex-grow flex flex-col items-center justify-center gap-8
          py-16 px-4'>
-          <h1 className=' text-[30px] md:text-[40px] font-bold'>
+          <h1 className=' text-[30px] md:text-[40px] font-bold text-center'>
             Thanks for checking out my Portfolio!
           </h1>
           <p className='text-[24px]'>
