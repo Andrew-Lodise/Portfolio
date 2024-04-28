@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.eb94de5b.css",
-    "main.js": "/Portfolio/static/js/main.b39f5ffd.js",
+    "main.css": "/Portfolio/static/css/main.9d995eb0.css",
+    "main.js": "/Portfolio/static/js/main.dd5d6c44.js",
     "static/media/wtw2.JPG": "/Portfolio/static/media/wtw2.6af351cdae8989d5ac01.JPG",
-    "static/media/Andrew-Lodise-Resume.pdf": "/Portfolio/static/media/Andrew-Lodise-Resume.1aef8670dca8cf9af4f8.pdf",
+    "static/media/Andrew-Lodise-Resume.pdf": "/Portfolio/static/media/Andrew-Lodise-Resume.320a8bae681f335d1e6b.pdf",
+    "static/media/homepage169.jpg": "/Portfolio/static/media/homepage169.1009f51dc5f98c223e0a.jpg",
     "static/media/StockLoopup2.JPG": "/Portfolio/static/media/StockLoopup2.5285fabd35dba15abc4f.JPG",
     "static/media/skillspage.JPG": "/Portfolio/static/media/skillspage.56eaf0a93c4bcd5ef556.JPG",
-    "static/media/wtw1.JPG": "/Portfolio/static/media/wtw1.b73952a4fbca7cdf62ef.JPG",
-    "static/media/homepage.JPG": "/Portfolio/static/media/homepage.f577090a101656ffb4d8.JPG",
-    "static/media/StockLoopup1.JPG": "/Portfolio/static/media/StockLoopup1.b454ca66a5cd1bec94bb.JPG",
+    "static/media/wtw169.jpg": "/Portfolio/static/media/wtw169.6c0433dc31eed7e7b6e9.jpg",
+    "static/media/StockLoopup169.jpg": "/Portfolio/static/media/StockLoopup169.d8652894452e1225cafc.jpg",
     "static/media/circle-headshot.jpg": "/Portfolio/static/media/circle-headshot.f86a28d2d4f7149e75c2.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.eb94de5b.css.map": "/Portfolio/static/css/main.eb94de5b.css.map",
-    "main.b39f5ffd.js.map": "/Portfolio/static/js/main.b39f5ffd.js.map"
+    "main.9d995eb0.css.map": "/Portfolio/static/css/main.9d995eb0.css.map",
+    "main.dd5d6c44.js.map": "/Portfolio/static/js/main.dd5d6c44.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb94de5b.css",
-    "static/js/main.b39f5ffd.js"
+    "static/css/main.9d995eb0.css",
+    "static/js/main.dd5d6c44.js"
   ]
 }
