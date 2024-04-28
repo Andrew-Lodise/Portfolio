@@ -17,12 +17,18 @@ const About = () => {
         </div>
 
         <div className='w-full flex flex-col items-center gap-4'>
-          <div className=' rounded-md
-          flex flex-col items-center '>
+          <div className=' rounded-md flex flex-col items-center gap-8 text-[18px]
+          md:text-[26px] font-light max-w-[700px]'>
             <img src={headshot} alt="" className='h-[30vh] rounded-full'/>
-            <p className='p-4 text-[18px] font-light max-w-[500px]'>
-              I'm a West Chester graduate looking to persue a career in the information 
-              technology sector. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto dignissimos at maxime cumque quod deserunt sapiente nemo aperiam. Doloribus exercitationem debitis quos quasi corrupti dolores quae eius reiciendis libero.
+            <p className=''>
+              I'm a West Chester graduate looking to persue a career in IT. I've been 
+              fascinated by technology from age 5 when I first interacted with a computer, 
+              and wondered how it worked. 
+            </p>
+            <p className=''>
+              Throughtout my school years I always had a talent
+              from math and science, but it was the unique blend of creativity and
+              problem-solving that lead me to computer science.
             </p>
           </div>
         </div>

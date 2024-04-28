@@ -36,9 +36,9 @@ const contact2 = () => {
           <h1 className=' text-[30px] md:text-[40px] font-bold text-center'>
             Thanks for checking out my Portfolio!
           </h1>
-          <p className='text-[24px]'>
+          <p className='text-[24px] text-center'>
             Check out the links below or send me an <a href='mailto:Andrew.Lodise.Dev@gmail.com' 
-            className=' text-tertiary'>email </a>
+            className=' text-tertiary'>email</a>!
           </p>
           <div name="buttons" className='grid gird-cols-2 grid-rows-2 w-full p-2 gap-4 text-2xl
           font-semibold max-w-[500px]'>
