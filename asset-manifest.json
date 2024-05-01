@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ba2790be.css",
-    "main.js": "/Portfolio/static/js/main.d38e0ddd.js",
+    "main.css": "/Portfolio/static/css/main.fae761d8.css",
+    "main.js": "/Portfolio/static/js/main.fa32e374.js",
     "static/media/wtw2.JPG": "/Portfolio/static/media/wtw2.6af351cdae8989d5ac01.JPG",
     "static/media/Andrew-Lodise-Resume.pdf": "/Portfolio/static/media/Andrew-Lodise-Resume.320a8bae681f335d1e6b.pdf",
     "static/media/homepage169.jpg": "/Portfolio/static/media/homepage169.1009f51dc5f98c223e0a.jpg",
@@ -13,11 +13,11 @@
     "static/media/serverProjectImg2.jpg": "/Portfolio/static/media/serverProjectImg2.985d3c2091676373d9d1.jpg",
     "static/media/serverProjectImg1.jpg": "/Portfolio/static/media/serverProjectImg1.871ae00650bb6e5bd8a9.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.ba2790be.css.map": "/Portfolio/static/css/main.ba2790be.css.map",
-    "main.d38e0ddd.js.map": "/Portfolio/static/js/main.d38e0ddd.js.map"
+    "main.fae761d8.css.map": "/Portfolio/static/css/main.fae761d8.css.map",
+    "main.fa32e374.js.map": "/Portfolio/static/js/main.fa32e374.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba2790be.css",
-    "static/js/main.d38e0ddd.js"
+    "static/css/main.fae761d8.css",
+    "static/js/main.fa32e374.js"
   ]
 }
