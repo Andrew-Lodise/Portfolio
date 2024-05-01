@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9d995eb0.css",
-    "main.js": "/Portfolio/static/js/main.dd5d6c44.js",
+    "main.css": "/Portfolio/static/css/main.ba2790be.css",
+    "main.js": "/Portfolio/static/js/main.d38e0ddd.js",
     "static/media/wtw2.JPG": "/Portfolio/static/media/wtw2.6af351cdae8989d5ac01.JPG",
     "static/media/Andrew-Lodise-Resume.pdf": "/Portfolio/static/media/Andrew-Lodise-Resume.320a8bae681f335d1e6b.pdf",
     "static/media/homepage169.jpg": "/Portfolio/static/media/homepage169.1009f51dc5f98c223e0a.jpg",
@@ -10,12 +10,14 @@
     "static/media/wtw169.jpg": "/Portfolio/static/media/wtw169.6c0433dc31eed7e7b6e9.jpg",
     "static/media/StockLoopup169.jpg": "/Portfolio/static/media/StockLoopup169.d8652894452e1225cafc.jpg",
     "static/media/circle-headshot.jpg": "/Portfolio/static/media/circle-headshot.f86a28d2d4f7149e75c2.jpg",
+    "static/media/serverProjectImg2.jpg": "/Portfolio/static/media/serverProjectImg2.985d3c2091676373d9d1.jpg",
+    "static/media/serverProjectImg1.jpg": "/Portfolio/static/media/serverProjectImg1.871ae00650bb6e5bd8a9.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.9d995eb0.css.map": "/Portfolio/static/css/main.9d995eb0.css.map",
-    "main.dd5d6c44.js.map": "/Portfolio/static/js/main.dd5d6c44.js.map"
+    "main.ba2790be.css.map": "/Portfolio/static/css/main.ba2790be.css.map",
+    "main.d38e0ddd.js.map": "/Portfolio/static/js/main.d38e0ddd.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d995eb0.css",
-    "static/js/main.dd5d6c44.js"
+    "static/css/main.ba2790be.css",
+    "static/js/main.d38e0ddd.js"
   ]
 }
