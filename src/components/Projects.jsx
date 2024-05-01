@@ -1,25 +1,33 @@
-import React from 'react'
-import ProjectList from '../data/ProjectList'
-import ProjectItem from './ProjectItem'
+import React from 'react';
+import ProjectList from '../data/ProjectList';
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <section name='projects' className='w-full h-screen bg-primary text-secondary 
-    flex flex-col items-center justify-center border-b-[1px] border-tertiary'>
-      <h1 className=' w-full max-w-[1200px] text-[16px]/[24px] lg:text-[24px]/[30px]
-      pl-16 '>
-        Explore the projects I've created
-      </h1>
-      <div className={`h-[80vh] w-full max-w-[1200px] grid md:grid-rows-${Math.ceil(ProjectList.length/2)} 
-      md:grid-cols-2 gap-16 grid-rows-${ProjectList.length/2} px-16 py-8`}>
-        {ProjectList.map(project => (
-          <ProjectItem key={project.id} projectId={project.id} title={project.title} />
-        ))}
-        
-      </div>
+    <section name="projects" className='bg-primary w-full min-h-screen text-secondary
+    flex flex-col md:px-24 px-6 py-24 items-center'>
+      <div className='max-w-[1000px] w-full h-full'>
+        <div name='header' className='flex w-full'>
+          <div className=' flex-grow grid grid-cols-1 grid-rows-2 px-4'>
+            <div></div>
+            <div className='border-t-[1px] border-secondary opacity-40'></div>
+          </div>
+          <h1 className='text-[36px] md:text-[56px] font-black mb-4'>
+            Projects<span className='text-[#272799]'>.</span>
+          </h1>
+        </div>
 
+        <div className='w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4'>
+          {ProjectList.map(project => {
+            return (
+              <ProjectItem key={project.id} projectId={project.id} />
+            )
+          })}
+          
+        </div>
+      </div>
     </section>
   )
 }
 
-export default Projects
+export default Projects 

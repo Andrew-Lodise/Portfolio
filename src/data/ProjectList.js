@@ -4,6 +4,8 @@ import homepage from "../assets/homepage169.jpg"
 import skillspage from "../assets/skillspage.JPG"
 import stockLookup1 from '../assets/StockLoopup169.jpg'
 import stockLookup2 from '../assets/StockLoopup2.JPG'
+import server1 from '../assets/serverProjectImg1.jpg'
+import server2 from '../assets/serverProjectImg2.jpg'
 
 
 const ProjectList = [
@@ -53,7 +55,22 @@ const ProjectList = [
     purpose: 'This app was created to display my front-end engineering skills through showcasing my projects',
     codeLink: 'https://github.com/Andrew-Lodise/Portfolio.git',
     embedLink: 'https://www.youtube.com/embed/sbKTMBsuHpk',
-  }
+  },
+  {
+    title: 'Backend Server',
+    name: `Express API Server`,
+    id: 3,
+    images: [server1, server2],
+    tech: ['Express', 'EJS', 'Bootstrap', 'MongoDB'],
+    description: `This application is a back end server that shows ejs pages to the user based on where they navigate 
+    to on the homepage. It also has the ablity to serve as an API, responging to http requests to /api/. The program
+    also connects to a MongoDB database to read and add user information.`,
+    shortDescription: `Backend API server that connects to a database`,
+    purpose: 'This server was designed to display EJS pages, connect to a MongoDB database, and respond to API requests ',
+    codeLink: 'https://github.com/Andrew-Lodise/ExpressAPIServer',
+    embedLink: 'https://www.youtube.com/embed/znH1QpICYYo',
+  },
+
 ]
 
 export default ProjectList

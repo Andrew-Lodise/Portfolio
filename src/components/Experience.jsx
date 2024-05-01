@@ -1,5 +1,4 @@
 import React from 'react'
-import resume from '../assets/Andrew-Lodise-Resume.pdf'
 import { TbRectangleVertical, TbRectangleVerticalFilled  } from "react-icons/tb";
 
 const Experience = () => {
@@ -78,16 +77,7 @@ const Experience = () => {
     
                   </div>
                   <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
+                    
                   </div>
                   
                 </div>

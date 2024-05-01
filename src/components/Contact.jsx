@@ -1,10 +1,7 @@
 import React from 'react'
 import resume from '../assets/Andrew-Lodise-Resume.pdf'
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { IoDocumentTextOutline } from 'react-icons/io5';
-import { IoIosMail } from 'react-icons/io';
 
-const Contact = () => {
+const contact = () => {
 
   const openResume = () => {
     window.open(resume,'_blank');
@@ -16,80 +13,60 @@ const Contact = () => {
     window.open('https://www.linkedin.com/in/andrew-lodise','_blank');
   };
 
-
   return (
-    <section name='contact' className='w-full h-screen bg-primary text-secondary flex justify-center 
-     py-4'>
-      <div name='content' className='w-full h-full  max-w-[1000px] grid
-      grid-rows-2 grid-cols-1 p-4 gap-6 text-3xl'>
-        {/** upper section */}
-        <div className='flex flex-col items-center'>
-          <h3 className='w-full max-w-[600px] font-medium mb-1'>
-            Connect through socials
-          </h3>
-          <ul className=' grid grid-rows-3 grid-cols-1 gap-16 p-8 flex-grow
-          w-full max-w-[600px] '>
-            <li className=''>
-            <button className='flex items-center border-[1px] border-secondary 
-              w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
-              duration-300 ease-in-out justify-center rounded-md hover:text-tertiary'
-              onClick={openLinkedin}>
-                Linkedin
-              <FaLinkedin className='ml-2'/>
-              </button>
-            </li>
-            <li className=''>
-              <button className='flex items-center border-[1px] border-secondary 
-              w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
-              duration-300 ease-in-out justify-center rounded-md hover:text-tertiary'
-                onClick={openGithub}>
-                  Github
-                <FaGithub className='ml-2'/>
-                </button>
-            </li>
-            <li className=''>
-              <button className='flex items-center border-[1px] border-secondary 
-              w-full h-full hover:border-tertiary shadow-basedSmall hover:shadow-basedHover 
-              duration-300 ease-in-out justify-center rounded-md hover:text-tertiary'
-                onClick={openResume}>
-                  Resume
-                  <IoDocumentTextOutline className='ml-2'/>
-                </button>
-            </li>
-          </ul>
+    <section name="contact" className='bg-primary w-full  text-secondary
+    flex flex-col md:px-24 px-6 py-24 items-center '>
+      <div className='max-w-[1000px] w-full h-full flex flex-col items-center'>
+        <div name='header' className='flex w-full mb-4 '>
+          <div className=' flex-grow grid grid-cols-1 grid-rows-2 px-4'>
+            <div></div>
+            <div className='border-t-[1px] border-secondary opacity-40'></div>
+          </div>
+          <h1 className='text-[36px] md:text-[56px] font-black'>
+            Contact<span className='text-tertiary'>.</span>
+          </h1>
+          <div className=' flex-grow grid grid-cols-1 grid-rows-2 px-4'>
+            <div></div>
+            <div className='border-t-[1px] border-secondary opacity-40'></div>
+          </div>
         </div>
-   
-        <div className='flex flex-col'>
-          <h3 className='mb-2 font-medium'>
-            Send me a message!
-          </h3>
 
-          <form action="https://getform.io/f/eapwdyxb" method='POST' 
-          className='size-full grid grid-rows-6 grid-cols-1 gap-6 text-2xl p-4'>
-            <input type="text" placeholder='Name' name="name" 
-            className='bg-primary border-[1px] border-secondary px-2 rounded-md
-             shadow-basedSmall'/>
-
-            <input type="text" placeholder='Email' name="email" 
-            className='bg-primary border-[1px] border-secondary px-2 rounded-md
-            shadow-basedSmall'/>
-
-            <textarea type="text" placeholder='Message' name="message" 
-            className='bg-primary border-[1px] border-secondary px-2 rounded-md
-            shadow-basedSmall row-span-3'/>
-
-            <button className='border-[1px]  px-2 bg-tertiary shadow-basedSmallt
-            text-black border-tertiary flex items-center gap-2 group overflow-hidden rounded-md
-            duration-300 ease-in-out w-fit hover:shadow-basedHover'>
-              <p> Submit </p>
-              <IoIosMail className='text-3xl group-hover:text-gray-900 group-hover:translate-x-10 
-              duration-1000 ease-in-out'/>
-            </button> 
-          </form>
+        <div className='w-full max-w-[900px] flex-grow flex flex-col items-center justify-center gap-8
+         py-16 px-4'>
+          <h1 className=' text-[30px] md:text-[40px] font-bold text-center'>
+            Thanks for checking out my Portfolio!
+          </h1>
+          <p className='text-[24px] text-center'>
+            Check out the links below or send me an <a href='mailto:Andrew.Lodise.Dev@gmail.com' 
+            className=' text-tertiary hover:underline'>email</a>!
+          </p>
+          <div name="buttons" className='grid gird-cols-2 grid-rows-2 w-full p-2 gap-4 text-2xl
+          font-semibold max-w-[500px]'>
+            <button className='box-border border-[1px] border-secondary text-secondary text-center rounded-md
+            hover:bg-secondary hover:text-black py-4 duration-300 ease-in-out'
+            onClick={openLinkedin}>
+              LinkedIn
+            </button>
+            <button className='box-border border-[1px] border-secondary text-secondary text-center rounded-md
+            hover:bg-secondary hover:text-black py-4 duration-300 ease-in-out'
+            onClick={openGithub}>
+              Github
+            </button>
+            <button className=' col-span-2 box-border border-[1px] border-tertiary 
+            text-center rounded-md bg-primary text-tertiary font-bold
+            py-4 duration-300 ease-in-out hover:bg-tertiary hover:text-black'
+            onClick={openResume}>
+              Resume
+            </button>
+          </div>
         </div>
+        
+        <p>
+
+        </p>
       </div>
     </section>
   )
 }
 
-export default Contact
+export default contact
