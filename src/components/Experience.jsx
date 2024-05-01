@@ -1,5 +1,4 @@
 import React from 'react'
-import { TbRectangleVertical, TbRectangleVerticalFilled  } from "react-icons/tb";
 
 const Experience = () => {
 
@@ -65,68 +64,47 @@ const Experience = () => {
               <h1 className='text-[22px] font-bold '>
                 General Programming Languages
               </h1>
-              <div className='flex flex-col  flex-grow justify-evenly p-4'>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+              <div className='flex flex-col flex-grow justify-evenly p-4 '>
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     Java
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
-    
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    OOP, Design Principles
                   </div>
-                  
                 </div>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     Python
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
-    
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    DSA, Image Processing, UI
                   </div>
-                  
                 </div>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     JavaScript
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    Web Dev, DSA
                   </div>
-                  
                 </div>
 
               </div>
@@ -135,77 +113,47 @@ const Experience = () => {
               <h1 className='text-[22px] font-bold '>
               Front-end Technologies
               </h1>
-              <div className='flex flex-col  flex-grow justify-evenly p-4'>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+              <div className='flex flex-col flex-grow justify-evenly p-4 '>
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     HTML
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
-    
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    Basic Web Page Design
                   </div>
-                  
                 </div>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     React
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
-    
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    Dynamic SPA development
                   </div>
-                  
                 </div>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     Tailwind
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    CSS application
                   </div>
-                  
                 </div>
 
               </div>
@@ -214,77 +162,47 @@ const Experience = () => {
               <h1 className='text-[22px] font-bold '>
               Back-end Technologies
               </h1>
-              <div className='flex flex-col  flex-grow justify-evenly p-4'>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+              <div className='flex flex-col flex-grow justify-evenly p-4 '>
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     Node
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
-    
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    Backend ExpressJS servers
                   </div>
-                  
                 </div>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     MongoDB
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
-    
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    NoSQL database manipulation
                   </div>
-                  
                 </div>
-                <div className=' flex justify-between'>
-                  <h2 className=' text-[18px] font-bold'>
+
+                <div className=' flex items-center w-full '>
+                  <h2 className='text-[18px] font-bold flex-grow'>
                     Docker
                   </h2>
-                  <div className=' w-full flex-shrink grid grid-cols-1 grid-rows-2 p-2'>
+                  <div className='w-[75%] flex-shrink flex-grow-0 grid grid-cols-1 grid-rows-2 p-2 '>
                     <div></div>
                     <div className='border-t-[1px] border-white border-opacity-40'>
                     </div>
                   </div>
-                  <div className='flex text-sm items-center text-tertiary'>
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVerticalFilled />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
-                    <TbRectangleVertical />
+                  <div className=' text-sm items-center text-tertiary flex-grow '>
+                    Containerization
                   </div>
-                  
                 </div>
 
               </div>

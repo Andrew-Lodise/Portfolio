@@ -4,7 +4,7 @@ import Experience from './Experience'
 import Navbar from './navbar'
 import About from './About'
 import Projects from './Projects'
-import Contact from './contact'
+import Contact from './Contact'
 
 
 export default function Main() {
